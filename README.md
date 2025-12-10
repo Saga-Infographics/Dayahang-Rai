@@ -24,17 +24,23 @@ This project is set up for local development using `npm run dev` and production 
 
 ## Short bio (from site)
 
-Dayahang Rai — Actor • Theatre Practitioner
+Dayahang Rai — Actor • Theatre Practitioner • Director
 
-Associated with Mandala Theatre Nepal, Buddhi's work explores Nepali narratives and social themes rooted in local culture. Notable theatre works referenced in the site include:
+Born on April 13, 1980, in Khawa, Bhojpur District, Eastern Nepal. Dayahang Rai is one of Nepal's most popular and accomplished actors with over 50 films to his credit. He is a recipient of three National Awards and is affiliated with Mandala Theatre, Nepal, which he co-founded with Rajan Khatiwada and Dhiren Raja (Limbu).
 
-- Jhimke Mama (Writer & Director, 2020) — an original play based on a real story by Durga Prasad Pandey.
-- Masaantaar (Writer & Director, 2017) — political satire exploring superstition and social dynamics.
-- Kalapattharmathi (Director, 2017) — Mandala Theatre production.
-- Recent Production (Director, 2024) — a recent theatrical production at Mandala Theatre Nepal.
-- Film appearance: Barista Balaram (Actor, 2025) — added as a portfolio entry.
+**Notable Films:**
+- Loot (2012) — His career breakthrough, iconic character Gofle, co-wrote dialogues, won Popular Award
+- Kabaddi series (2013, 2015, 2019) — Established him as leading actor, won multiple awards
+- White Sun / Seto Surya (2016) — Critically acclaimed, Nepal's submission to 2018 Oscars for Best Foreign Language Film
+- Dasdhunga (2009) — Won first National Award for Best Supporting Actor
+- Sambodhan (2014) & Kabaddi Kabaddi (2015) — Won National Awards for Best Actor
 
-These descriptions are taken from the portfolio data in `src/screens/Portfolio/Portfolio.tsx` and the Home/About copy.
+**Theatre:**
+- Joined Actors' Studio in 2007
+- Co-founded Mandala Theatre, Nepal in 2008
+- Has performed in and directed multiple theatrical productions
+
+These details are based on the portfolio data in `src/screens/Portfolio/Portfolio.tsx` and biographical content from Wikipedia.
 
 ## Project structure (key files)
 
@@ -121,7 +127,10 @@ The Home page renders `/images/kaalaa-patthar-maathi.jpg` for the "Kaalaa Pattha
 
 ## License & credits
 
-This repository contains the source code for a personal portfolio. Content (text and images) belongs to Dayahang Rai (as provided). The codebase uses open-source libraries; check `package.json` for dependency licenses.
+This repository contains the source code for Dayahang Rai's personal portfolio website. Content (text and images) belongs to Dayahang Rai (as provided). The codebase uses open-source libraries; check `package.json` for dependency licenses.
+
+**About Dayahang Rai:**
+Award-winning Nepali actor, director, and playwright known for transformative performances in film and theatre. For more information, visit his official website or follow him on social media.
 
 ---
 
