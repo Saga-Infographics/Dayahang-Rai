@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const socialIcons = [
-  { src: "/container-3.svg", alt: "Facebook", url: "#" },
-  { src: "/container.svg", alt: "Instagram", url: "#" },
-  // YouTube (placeholder)
-  { src: "/container-2.svg", alt: "YouTube", url: "#" },
+  { alt: "Facebook", url: "#", src: "/facebook.svg" },
+  { alt: "Instagram", url: "#", src: "/instagram.svg" },
+  { alt: "YouTube", url: "#", src: "/youtube-1.svg" },
 ];
 
 const sectionLinks = [
@@ -41,12 +40,13 @@ export const Footer = (): JSX.Element => {
                   key={index}
                   href={icon.url ?? '#'}
                   aria-label={icon.alt}
-                  className="w-9 h-9 rounded-md bg-white/10 flex items-center justify-center hover:bg-white/16 transition shadow-sm"
+                  className="group"
                   target={icon.url && icon.url !== '#' ? '_blank' : undefined}
                   rel={icon.url && icon.url !== '#' ? 'noopener noreferrer' : undefined}
                 >
-                  {/* SVG icons are dark; apply filter to make them visible on dark background */}
-                  <img className="w-5 h-5 filter invert brightness-150" alt={icon.alt} src={icon.src} />
+                  <div className="w-9 h-9 rounded-full border-2 border-white/40 bg-white/5 flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
+                    <img className="w-5 h-5 group-hover:invert" src={icon.src} alt={icon.alt} />
+                  </div>
                 </a>
               ))}
             </div>
@@ -70,7 +70,7 @@ export const Footer = (): JSX.Element => {
             <p className="text-sm text-[#cfc7bc] mb-3">Subscribe for occasional news about productions and events.</p>
             <form className="flex gap-2">
               <input aria-label="Email" type="email" placeholder="Your email" className="flex-1 px-3 py-2 rounded-md text-[#1A1A1A]" />
-              <Button type="submit" className="px-4 py-2 bg-[#C4633E] hover:bg-[#b45735]">Subscribe</Button>
+              <Button type="submit" className="px-4 py-2 bg-black hover:bg-gray-900 text-white">Subscribe</Button>
             </form>
           </div>
         </div>

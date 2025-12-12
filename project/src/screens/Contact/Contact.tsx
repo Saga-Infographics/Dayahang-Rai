@@ -7,7 +7,7 @@ import { SEO } from "../../components/SEO/SEO";
 
 const socialMediaButtons = [
   {
-    icon: "/facebook-1.svg",
+    icon: "/facebook.svg",
     alt: "Facebook",
     url: "https://www.facebook.com/BuddhiTamangOfficial",
   },
@@ -17,7 +17,7 @@ const socialMediaButtons = [
     url: "https://www.instagram.com/buddhitamang.official/",
   },
   {
-    icon: "/youtube.svg",
+    icon: "/youtube-1.svg",
     alt: "YouTube",
     url: "https://www.youtube.com/@BuddhiTamang",
   },
@@ -94,14 +94,14 @@ export const Contact = (): JSX.Element => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={social.alt}
-                      className="transform hover:scale-110 transition-transform duration-300"
+                      className="group"
                     >
                       <Button
                         variant="outline"
                         size="icon"
-                          className="w-12 h-12 bg-white border border-[#8B2E34] text-[#8B2E34] hover:bg-[#A23C43] hover:text-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg"
+                        className="w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-black transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
                       >
-                        <img src={social.icon} alt={social.alt} className="w-6 h-6" />
+                        <img src={social.icon} alt={social.alt} className="w-6 h-6 group-hover:invert" />
                       </Button>
                     </a>
                   ))}
@@ -127,7 +127,7 @@ export const Contact = (): JSX.Element => {
 
               <div className="mt-4 text-center">
                 <Button asChild>
-                    <a href="/media" className="px-8 py-3 bg-[#8B2E34] text-white font-semibold rounded-lg hover:bg-[#A23C43] transition-colors">
+                    <a href="/media" className="px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors">
                     Explore Media Gallery
                   </a>
                 </Button>

@@ -94,7 +94,7 @@ export const Portfolio = (): JSX.Element => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 ${
                   activeCategory === category
-                    ? "bg-[#8B2E34] text-white shadow-lg hover:bg-[#A23C43]"
+                    ? "bg-black text-white shadow-lg hover:bg-gray-900"
                     : "bg-[#e6dfd2] text-[#2B2B2B] hover:bg-[#e1d8c8]"
                 }`}
               >
