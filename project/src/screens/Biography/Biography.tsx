@@ -109,13 +109,13 @@ export const Biography = (): JSX.Element => {
           <div className="mt-16 text-center">
             <a
               href="/media"
-              className="inline-block px-8 py-4 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors shadow-lg hover:shadow-xl"
+              className="inline-block px-8 py-4 bg-[#111111] text-[#EDEDED] font-semibold rounded-2xl hover:bg-[#1A1A1A] hover:shadow-2xl transition-all duration-250 shadow-lg hover:-translate-y-1"
             >
               Explore Media Gallery
             </a>
             <a
               href="/contact"
-              className="inline-block ml-4 px-8 py-4 border-2 border-black text-black font-semibold rounded-lg hover:bg-black hover:text-white transition-colors shadow-lg hover:shadow-xl"
+              className="inline-block ml-4 px-8 py-4 border-2 border-[#111111] text-[#111111] font-semibold rounded-2xl hover:border-[#BFA372] hover:shadow-2xl transition-all duration-250 shadow-lg hover:-translate-y-1"
             >
               Contact Dayahang Rai
             </a>

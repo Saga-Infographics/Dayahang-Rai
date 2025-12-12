@@ -44,19 +44,19 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
   }, [openMobile]);
 
   return (
-    <><header className={`w-full sticky top-0 z-40 transition-all duration-500 ease-in-out ${scrolled
-        ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-[#e0d7c7]'
-        : 'bg-white/85 backdrop-blur-sm shadow-sm border-b border-[#e7dece]'}`}>
+    <><header className={`w-full sticky top-0 z-40 transition-all duration-300 ${scrolled
+        ? 'bg-white/40 backdrop-blur-xl shadow-lg border-b border-white/20'
+        : 'bg-white/30 backdrop-blur-lg shadow-sm border-b border-white/10'}`}>
       <nav className="max-w-[1200px] mx-auto flex items-center justify-between gap-6 px-6 py-4">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="w-12 h-12 bg-gradient-to-br from-[#1A1A1A] via-[#2B2B2B] to-[#C9A86A] text-white rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-500 ease-in-out">
             <img className="w-6 h-6 group-hover:rotate-12 transition-transform duration-500 ease-in-out" alt="Gem" src="/gem.svg" />
           </div>
           <div>
-            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1A1A1A] text-xl tracking-tight leading-5">
+            <h1 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#1A1A1A] text-xl tracking-tight leading-5">
               Dayahang Rai
             </h1>
-            <p className="text-xs text-[#6F6F6F] font-medium tracking-wide">Actor • Theatre Practitioner</p>
+            <p className="text-xs text-[#6F6F6F] [font-family:'Manrope',Helvetica] font-medium tracking-wide">Actor • Theatre Practitioner</p>
           </div>
         </Link>
 
@@ -66,12 +66,12 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
               <li key={index}>
                 <Link
                   to={item.path}
-                  className={`[font-family:'Open_Sans',Helvetica] text-sm tracking-[0] leading-[22px] whitespace-nowrap px-4 py-2.5 rounded-lg transition-all duration-500 ease-in-out relative overflow-hidden group ${item.label === activePage
-                      ? "font-semibold text-white bg-black shadow-md"
-                      : "font-medium text-[#1A1A1A] hover:text-black hover:bg-gray-100"}`}
+                  className={`[font-family:'Manrope',Helvetica] text-sm tracking-[0] leading-[22px] whitespace-nowrap px-4 py-2.5 rounded-xl transition-all duration-250 ease-in-out relative overflow-hidden group ${item.label === activePage
+                      ? "font-semibold text-[#EDEDED] bg-[#111111] shadow-md"
+                      : "font-medium text-[#1A1A1A] hover:text-[#111111] hover:bg-gray-100"}`}
                 >
                   {item.label === activePage && (
-                    <span className="absolute inset-0 bg-black -z-10"></span>
+                    <span className="absolute inset-0 bg-[#111111] -z-10"></span>
                   )}
                   <span className="relative z-10">{item.label}</span>
                 </Link>
@@ -89,7 +89,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                 aria-label={icon.alt}
                 className="group"
               >
-                <div className="w-10 h-10 rounded-full border-2 border-black bg-white flex items-center justify-center hover:bg-black transition-all duration-300 ease-in-out">
+                <div className="w-10 h-10 rounded-full border-2 border-[#111111] bg-white flex items-center justify-center hover:border-[#BFA372] hover:shadow-lg transition-all duration-250 ease-in-out">
                   <img className="w-5 h-5 group-hover:invert" src={icon.src} alt={icon.alt} />
                 </div>
               </a>
@@ -102,7 +102,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
           <button
             onClick={() => setOpenMobile((v) => !v)}
             aria-label="Toggle navigation"
-            className="w-11 h-11 rounded-lg flex items-center justify-center border-2 border-[#e0d7c7] hover:border-black hover:bg-[#f6f1e7] transition-all duration-500 ease-in-out active:scale-95"
+            className="w-11 h-11 rounded-xl flex items-center justify-center border-2 border-[#e0d7c7] hover:border-black hover:bg-[#f6f1e7] hover:shadow-lg transition-all duration-250 ease-in-out active:scale-95"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d={openMobile ? "M6 18L18 6M6 6l12 12" : "M3 12h18M3 6h18M3 18h18"} />
@@ -117,12 +117,12 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
           aria-hidden="true" />
 
         {/* Enhanced mobile menu */}
-        <aside className={`fixed top-20 right-4 z-50 w-[340px] bg-gradient-to-b from-white to-[#f6f1e7] rounded-2xl shadow-2xl border border-[#e0d7c7] transform transition-all duration-500 ease-out ${openMobile ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 -translate-y-4 scale-95 pointer-events-none'}`} role="dialog" aria-modal="true">
+        <aside className={`fixed top-20 right-4 z-50 w-[340px] bg-white/40 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 transform transition-all duration-250 ease-out ${openMobile ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 -translate-y-4 scale-95 pointer-events-none'}`} role="dialog" aria-modal="true">
           <div className="relative">
             <button
               onClick={() => setOpenMobile(false)}
               aria-label="Close menu"
-              className="absolute right-4 top-4 w-9 h-9 rounded-lg flex items-center justify-center border-2 border-[#e0d7c7] bg-white hover:border-black hover:bg-[#f6f1e7] transition-all duration-500 ease-in-out active:scale-95"
+              className="absolute right-4 top-4 w-9 h-9 rounded-xl flex items-center justify-center border-2 border-[#e0d7c7] bg-white hover:border-black hover:bg-[#f6f1e7] hover:shadow-lg transition-all duration-250 ease-in-out active:scale-95"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 18L18 6M6 6l12 12" />
@@ -136,7 +136,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                   <img className="w-6 h-6" alt="Gem" src="/gem.svg" />
                 </div>
                 <div>
-                  <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1A1A1A] text-lg">Dayahang Rai</h2>
+                  <h2 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#1A1A1A] text-lg">Dayahang Rai</h2>
                   <p className="text-xs text-[#6F6F6F] font-medium">Actor • Theatre</p>
                 </div>
               </div>
@@ -150,9 +150,9 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                       <Link
                         to={item.path}
                         onClick={() => setOpenMobile(false)}
-                        className={`block px-4 py-3 rounded-lg text-base [font-family:'Open_Sans',Helvetica] font-medium transition-all duration-500 ease-in-out ${item.label === activePage
-                          ? 'text-white bg-black shadow-md'
-                          : 'text-[#1A1A1A] hover:text-black hover:bg-white hover:shadow-sm'}`}
+                        className={`block px-4 py-3 rounded-xl text-base [font-family:'Manrope',Helvetica] font-medium transition-all duration-250 ease-in-out ${item.label === activePage
+                          ? 'text-[#EDEDED] bg-[#111111] shadow-md'
+                          : 'text-[#1A1A1A] hover:text-[#111111] hover:bg-white hover:shadow-sm'}`}
                       >
                         {item.label}
                       </Link>
@@ -174,7 +174,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                     rel="noopener noreferrer"
                     className="group"
                   >
-                    <div className="w-10 h-10 rounded-full border-2 border-black bg-white flex items-center justify-center hover:bg-black transition-all duration-300">
+                    <div className="w-10 h-10 rounded-full border-2 border-[#111111] bg-white flex items-center justify-center hover:border-[#BFA372] hover:shadow-lg transition-all duration-250">
                       <img className="w-5 h-5 group-hover:invert" src={icon.src} alt={icon.alt} />
                     </div>
                   </a>

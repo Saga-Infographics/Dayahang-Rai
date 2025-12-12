@@ -115,10 +115,10 @@ export const Media = (): JSX.Element => {
       {/* Hero Section */}
       <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#F3EFE8] to-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
-          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
+          <h1 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
             Media Gallery
           </h1>
-          <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
+          <p className="[font-family:'Manrope',Helvetica] font-normal text-[#4A4A4A] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
             A visual journey through Dayahang Rai's career — from iconic film moments to powerful theatre productions, behind-the-scenes glimpses, and press features.
           </p>
         </div>
@@ -128,7 +128,7 @@ export const Media = (): JSX.Element => {
       <section className="relative w-full py-10 sm:py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="flex items-center justify-between mb-6 sm:mb-8">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl">
+            <h2 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl">
               Featured Videos
             </h2>
           </div>
@@ -149,7 +149,7 @@ export const Media = (): JSX.Element => {
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl hover:bg-gray-900">
+                    <div className="w-16 h-16 bg-[#111111] rounded-3xl flex items-center justify-center group-hover:scale-110 transition-all duration-250 shadow-2xl hover:shadow-[0_0_30px_#BFA372] hover:shadow-2xl">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5v14l11-7L8 5z" fill="white" />
                       </svg>
@@ -159,13 +159,13 @@ export const Media = (): JSX.Element => {
 
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-black bg-black/5 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold text-[#111111] bg-[#111111]/5 px-2 py-1 rounded">
                       {video.type}
                     </span>
                     <span className="text-xs text-[#6F6F6F]">{video.year}</span>
                   </div>
 
-                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2 group-hover:text-black transition-colors">
+                  <h3 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2 group-hover:text-[#BFA372] transition-colors">
                     {video.title}
                   </h3>
 
@@ -183,7 +183,7 @@ export const Media = (): JSX.Element => {
       <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#F3EFE8] to-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+            <h2 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
               Iconic Film Performances
             </h2>
             <p className="text-[#4A4A4A] text-lg max-w-3xl mx-auto">
@@ -217,7 +217,7 @@ export const Media = (): JSX.Element => {
                           <span className="text-sm text-[#6F6F6F] italic">Role: {film.role}</span>
                       </div>
                       
-                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-xl md:text-2xl mb-3 group-hover:text-black transition-colors">
+                      <h3 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#2B2B2B] text-xl md:text-2xl mb-3 group-hover:text-[#BFA372] transition-colors">
                         {film.title}
                       </h3>
                       
@@ -227,7 +227,7 @@ export const Media = (): JSX.Element => {
                     </div>
                     
                     <div className="mt-4 pt-4 border-t border-slate-200">
-                      <div className="flex items-center gap-2 text-black">
+                      <div className="flex items-center gap-2 text-[#BFA372]">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
                         </svg>
@@ -245,7 +245,7 @@ export const Media = (): JSX.Element => {
       {/* Press & Interviews Section */}
       <section className="relative w-full py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-3xl md:text-4xl mb-8">
+          <h2 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-[#2B2B2B] text-3xl md:text-4xl mb-8">
             Press & Interviews
           </h2>
 
@@ -262,7 +262,7 @@ export const Media = (): JSX.Element => {
                   <span className="text-xs text-[#6F6F6F]">{item.date}</span>
                 </div>
                 
-                <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2">
+                <h3 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2">
                   {item.title}
                 </h3>
                 
@@ -282,7 +282,7 @@ export const Media = (): JSX.Element => {
       {/* Call to Action */}
       <section className="relative w-full py-12 bg-gradient-to-br from-[#F3EFE8] to-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
-          <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl md:text-3xl mb-4">
+          <h3 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl md:text-3xl mb-4">
             Interested in Working Together?
           </h3>
           <p className="text-[#4A4A4A] text-base md:text-lg mb-6 max-w-2xl mx-auto">
@@ -290,7 +290,7 @@ export const Media = (): JSX.Element => {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-black hover:bg-gray-900 text-white font-medium px-8 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            className="inline-block bg-[#111111] hover:bg-[#1A1A1A] text-[#EDEDED] font-medium px-8 py-4 rounded-2xl transition-all duration-250 shadow-lg hover:shadow-2xl hover:-translate-y-1"
           >
             Contact Me
           </a>

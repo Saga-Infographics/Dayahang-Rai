@@ -9,17 +9,17 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-black text-white shadow-md hover:bg-gray-900 hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
+          "rounded-2xl bg-[#111111] text-[#EDEDED] shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:border-b-4 hover:border-[#BFA372] transition-all duration-250 ease-out before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-250 before:z-0",
         primary:
-          "bg-black text-white shadow-lg hover:bg-gray-900 hover:shadow-xl hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
+          "rounded-2xl bg-[#111111] text-[#EDEDED] shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:border-b-4 hover:border-[#BFA372] transition-all duration-250 ease-out before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-250 before:z-0",
         destructive:
-          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+          "rounded-2xl bg-destructive text-destructive-foreground shadow-lg hover:bg-destructive/90 hover:shadow-xl transition-all duration-250 ease-out",
         outline:
-          "border-2 border-black bg-white text-black shadow-sm hover:bg-black hover:text-white hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-black/10 before:via-white/14 before:to-black/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
+          "rounded-2xl border-2 border-[#111111] bg-white text-[#111111] shadow-lg hover:border-[#BFA372] hover:shadow-2xl hover:-translate-y-1 transition-all duration-250 ease-out before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-black/10 before:via-white/14 before:to-black/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-250 before:z-0",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "text-muted-foreground hover:shadow-md hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/8 before:via-white/14 before:to-white/8 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
-        link: "text-black underline-offset-4 hover:text-gray-700 hover:underline",
+          "rounded-2xl bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/80 hover:shadow-xl transition-all duration-250 ease-out",
+        ghost: "rounded-2xl text-muted-foreground hover:shadow-lg hover:-translate-y-1 transition-all duration-250 ease-out before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/8 before:via-white/14 before:to-white/8 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-250 before:z-0",
+        link: "rounded-xl text-[#111111] underline-offset-4 hover:text-[#BFA372] hover:underline transition-colors duration-250",
       },
       size: {
         default: "h-11 px-6",

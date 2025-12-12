@@ -31,7 +31,7 @@ export const Home = (): JSX.Element => {
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 md:py-20 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div className="max-w-xl">
-              <h1 className="[font-family:'Playfair_Display',Helvetica] font-extrabold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 sm:mb-4">
+              <h1 className="[font-family:'DM_Serif_Display',Helvetica] font-extrabold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 sm:mb-4">
                 Dayahang Rai
               </h1>
 
@@ -146,7 +146,7 @@ export const Home = (): JSX.Element => {
       <section className="w-full py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3">
+            <h2 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3">
               Selected Work
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -216,7 +216,7 @@ export const Home = (): JSX.Element => {
       <section className="w-full py-10 sm:py-12 md:py-14 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-2xl sm:text-3xl md:text-4xl mb-2">
+            <h2 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-2xl sm:text-3xl md:text-4xl mb-2">
               Dayahang Rai — Actor, Theatre Practitioner & Mentor
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">

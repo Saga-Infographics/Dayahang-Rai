@@ -24,7 +24,7 @@ export const InquiryFormSection = (): JSX.Element => {
       <div className="container mx-auto px-6 md:px-40">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-10 md:gap-24">
           <div className="flex flex-col gap-10">
-            <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-base tracking-[0] leading-6">
+            <p className="[font-family:'Manrope',Helvetica] font-normal text-[#4A4A4A] text-base tracking-[0] leading-6">
               Elegant portfolio for an actor.
             </p>
             <div className="flex gap-6">

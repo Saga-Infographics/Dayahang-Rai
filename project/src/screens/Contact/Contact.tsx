@@ -41,24 +41,24 @@ export const Contact = (): JSX.Element => {
       <section className="w-full py-10 sm:py-16 md:py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0] leading-tight sm:leading-[50px] md:leading-[60px] lg:leading-[70px] mb-3 sm:mb-4">
+            <h1 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0] leading-tight sm:leading-[50px] md:leading-[60px] lg:leading-[70px] mb-3 sm:mb-4">
               Connect with Dayahang Rai
             </h1>
-            <p className="[font-family:'Open_Sans',Helvetica] text-lg md:text-xl text-[#4A4A4A] max-w-3xl mx-auto leading-8">
+            <p className="[font-family:'Manrope',Helvetica] text-lg md:text-xl text-[#4A4A4A] max-w-3xl mx-auto leading-8">
               Official contact page for Dayahang Rai — award-winning Nepali actor, theatre performer, and cultural icon. Reach out for professional bookings, fan messages, and media collaborations.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-start">
             {/* Left: Booking Form / Contact Info */}
-            <div className="bg-white shadow-lg rounded-xl p-4 sm:p-6 md:p-8 hover:shadow-2xl transition-shadow duration-300">
+            <div className="bg-white shadow-xl rounded-2xl p-8 sm:p-10 md:p-12 hover:shadow-2xl transition-shadow duration-250">
               <ContactInfoSection />
             </div>
 
             {/* Right: Contact Details */}
-            <aside className="bg-[#F3EFE8] p-4 sm:p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col gap-6 sm:gap-8">
+            <aside className="bg-[#F3EFE8] p-8 sm:p-10 md:p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-250 flex flex-col gap-8 sm:gap-10">
               <div>
-                <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl sm:3xl mb-4 sm:mb-6">
+                <h2 className="[font-family:'DM_Serif_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl sm:3xl mb-4 sm:mb-6">
                   Direct Contact
                 </h2>
                 <div className="flex flex-col gap-5">
@@ -99,7 +99,7 @@ export const Contact = (): JSX.Element => {
                       <Button
                         variant="outline"
                         size="icon"
-                        className="w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-black transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
+                        className="w-14 h-14 rounded-2xl border-2 border-[#111111] bg-white text-[#111111] hover:border-[#BFA372] transition-all duration-250 flex items-center justify-center shadow-lg hover:shadow-2xl hover:-translate-y-1"
                       >
                         <img src={social.icon} alt={social.alt} className="w-6 h-6 group-hover:invert" />
                       </Button>
@@ -127,7 +127,7 @@ export const Contact = (): JSX.Element => {
 
               <div className="mt-4 text-center">
                 <Button asChild>
-                    <a href="/media" className="px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors">
+                    <a href="/media" className="px-8 py-3 bg-[#111111] text-[#EDEDED] font-semibold rounded-2xl hover:bg-[#1A1A1A] transition-all duration-250 shadow-lg hover:shadow-xl hover:-translate-y-1">
                     Explore Media Gallery
                   </a>
                 </Button>

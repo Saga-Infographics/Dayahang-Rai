@@ -26,7 +26,7 @@ export const Footer = (): JSX.Element => {
               <div className="w-10 h-10 bg-[#C9A86A] rounded-md flex items-center justify-center shadow-md">
                 <img className="w-5 h-5" alt="Gem" src="/gem.svg" />
               </div>
-              <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#F3EFE8] text-xl">
+              <h3 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#F3EFE8] text-xl">
                 Dayahang Rai
               </h3>
             </div>
@@ -44,8 +44,8 @@ export const Footer = (): JSX.Element => {
                   target={icon.url && icon.url !== '#' ? '_blank' : undefined}
                   rel={icon.url && icon.url !== '#' ? 'noopener noreferrer' : undefined}
                 >
-                  <div className="w-9 h-9 rounded-full border-2 border-white/40 bg-white/5 flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
-                    <img className="w-5 h-5 group-hover:invert" src={icon.src} alt={icon.alt} />
+                  <div className="w-9 h-9 rounded-full border-2 border-white/40 bg-white/5 flex items-center justify-center group-hover:border-[#BFA372] hover:shadow-lg transition-all duration-250">
+                    <img className="w-5 h-5 invert group-hover:brightness-75" src={icon.src} alt={icon.alt} />
                   </div>
                 </a>
               ))}
@@ -53,7 +53,7 @@ export const Footer = (): JSX.Element => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-[#F3EFE8] mb-4">Quick Links</h4>
+            <h4 className="[font-family:'Manrope',Helvetica] font-semibold text-[#F3EFE8] mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-[#cfc7bc]">
               {sectionLinks.map((link, i) => (
                 <li key={i}>
@@ -66,11 +66,11 @@ export const Footer = (): JSX.Element => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-[#F3EFE8] mb-4">Stay in touch</h4>
+            <h4 className="[font-family:'Manrope',Helvetica] font-semibold text-[#F3EFE8] mb-4">Stay in touch</h4>
             <p className="text-sm text-[#cfc7bc] mb-3">Subscribe for occasional news about productions and events.</p>
             <form className="flex gap-2">
               <input aria-label="Email" type="email" placeholder="Your email" className="flex-1 px-3 py-2 rounded-md text-[#1A1A1A]" />
-              <Button type="submit" className="px-4 py-2 bg-black hover:bg-gray-900 text-white">Subscribe</Button>
+              <Button type="submit" className="px-6 py-2.5 bg-white text-[#111111] hover:border-b-2 hover:border-[#BFA372] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-250 ease-out font-semibold">Subscribe</Button>
             </form>
           </div>
         </div>
