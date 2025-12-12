@@ -115,12 +115,12 @@ export const Contact = (): JSX.Element => {
                 <div className="flex items-start gap-4">
                   <img className="w-7 h-7 mt-1" src="/home-2-1.svg" alt="Location" />
                   <div className="text-[#4A4A4A] text-sm">
-                    <div className="mb-2">
-                        <span className="font-semibold text-[#2B2B2B]">Permanent Address:</span> Gaighat, Nepal
-                    </div>
-                    <div>
-                        <span className="font-semibold text-[#2B2B2B]">Current Residence:</span> Kathmandu, Nepal
-                    </div>
+                  <div className="mb-2">
+                    <span className="font-semibold text-[#2B2B2B]">Permanent Address:</span> Khawa, Bhojpur District, Nepal
+                  </div>
+                  <div>
+                    <span className="font-semibold text-[#2B2B2B]">Current Residence:</span> Kathmandu, Nepal
+                  </div>
                   </div>
                 </div>
               </div>

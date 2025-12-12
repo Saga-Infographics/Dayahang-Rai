@@ -9,17 +9,17 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[#C4633E] text-white shadow-md hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
+          "bg-[#8B2E34] text-white shadow-md hover:bg-[#A23C43] hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
         primary:
-          "bg-[#C4633E] text-white shadow-lg hover:shadow-xl hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
+          "bg-[#8B2E34] text-white shadow-lg hover:bg-[#A23C43] hover:shadow-xl hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "border-2 border-[#C9A86A] bg-transparent text-[#C9A86A] shadow-sm hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-[#C9A86A]/10 before:via-white/20 before:to-[#C9A86A]/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
+          "border-2 border-[#8B2E34] bg-transparent text-[#8B2E34] shadow-sm hover:bg-[#A23C43] hover:text-white hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/8 before:via-white/14 before:to-white/8 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "text-muted-foreground hover:shadow-md hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/8 before:via-white/14 before:to-white/8 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
-        link: "text-[#C4633E] underline-offset-4 hover:underline",
+        link: "text-[#8B2E34] underline-offset-4 hover:text-[#A23C43] hover:underline",
       },
       size: {
         default: "h-11 px-6",
