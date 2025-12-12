@@ -99,7 +99,7 @@ export const Contact = (): JSX.Element => {
                       <Button
                         variant="outline"
                         size="icon"
-                          className="w-12 h-12 bg-white border border-[#C9A86A] text-[#C9A86A] rounded-full flex items-center justify-center shadow-md hover:shadow-lg"
+                          className="w-12 h-12 bg-white border border-[#8B2E34] text-[#8B2E34] hover:bg-[#A23C43] hover:text-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg"
                       >
                         <img src={social.icon} alt={social.alt} className="w-6 h-6" />
                       </Button>
@@ -127,7 +127,7 @@ export const Contact = (): JSX.Element => {
 
               <div className="mt-4 text-center">
                 <Button asChild>
-                    <a href="/media" className="px-8 py-3 bg-[#C4633E] text-white font-semibold rounded-lg hover:bg-[#b45735] transition-colors">
+                    <a href="/media" className="px-8 py-3 bg-[#8B2E34] text-white font-semibold rounded-lg hover:bg-[#A23C43] transition-colors">
                     Explore Media Gallery
                   </a>
                 </Button>

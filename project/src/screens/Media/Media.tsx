@@ -149,7 +149,7 @@ export const Media = (): JSX.Element => {
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-[#C4633E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                    <div className="w-16 h-16 bg-[#8B2E34] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl hover:bg-[#A23C43]">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5v14l11-7L8 5z" fill="white" />
                       </svg>
@@ -159,13 +159,13 @@ export const Media = (): JSX.Element => {
 
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-[#C4633E] bg-[#C4633E]/10 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold text-[#8B2E34] bg-[#8B2E34]/10 px-2 py-1 rounded">
                       {video.type}
                     </span>
                     <span className="text-xs text-[#6F6F6F]">{video.year}</span>
                   </div>
 
-                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2 group-hover:text-[#C4633E] transition-colors">
+                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2 group-hover:text-[#8B2E34] transition-colors">
                     {video.title}
                   </h3>
 
@@ -217,7 +217,7 @@ export const Media = (): JSX.Element => {
                           <span className="text-sm text-[#6F6F6F] italic">Role: {film.role}</span>
                       </div>
                       
-                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-xl md:text-2xl mb-3 group-hover:text-[#C4633E] transition-colors">
+                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-xl md:text-2xl mb-3 group-hover:text-[#8B2E34] transition-colors">
                         {film.title}
                       </h3>
                       
@@ -227,7 +227,7 @@ export const Media = (): JSX.Element => {
                     </div>
                     
                     <div className="mt-4 pt-4 border-t border-slate-200">
-                      <div className="flex items-center gap-2 text-[#C4633E]">
+                      <div className="flex items-center gap-2 text-[#8B2E34]">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
                         </svg>
@@ -290,7 +290,7 @@ export const Media = (): JSX.Element => {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#C4633E] hover:bg-[#b45735] text-white font-medium px-8 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            className="inline-block bg-[#8B2E34] hover:bg-[#A23C43] text-white font-medium px-8 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
           >
             Contact Me
           </a>
