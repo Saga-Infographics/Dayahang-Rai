@@ -18,13 +18,13 @@ const socialMediaIcons = [
 
 export const SocialMediaSection = (): JSX.Element => {
   return (
-    <header className="w-full h-16 bg-white shadow-[0px_0px_1px_#171a1f0d,0px_0px_2px_#171a1f14]">
+    <header className="w-full h-16 bg-white shadow-[0px_0px_1px_#1a1a1a0d,0px_0px_2px_#1a1a1a14]">
       <nav className="w-full h-full flex items-center justify-between px-6">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-[#18386e] rounded-md flex items-center justify-center">
+          <div className="w-8 h-8 bg-[#1A1A1A] rounded-md flex items-center justify-center">
             <img className="w-[22px] h-[22px]" alt="Gem" src="/gem.svg" />
           </div>
-          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#18386e] text-xl tracking-[0] leading-5 whitespace-nowrap">
+          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-xl tracking-[0] leading-5 whitespace-nowrap">
             Dayahang Rai
           </h1>
         </div>
@@ -36,8 +36,8 @@ export const SocialMediaSection = (): JSX.Element => {
                 href="#"
                 className={`[font-family:'Open_Sans',Helvetica] text-sm tracking-[0] leading-[22px] whitespace-nowrap ${
                   item.active
-                    ? "font-semibold text-[#18386e]"
-                    : "font-normal text-[#171a1f]"
+                    ? "font-semibold text-[#C4633E]"
+                    : "font-normal text-[#1A1A1A]"
                 }`}
               >
                 {item.label}
@@ -52,7 +52,7 @@ export const SocialMediaSection = (): JSX.Element => {
               key={index}
               variant="ghost"
               size="icon"
-              className="w-10 h-10 rounded-md p-0"
+              className="w-10 h-10 rounded-md p-0 text-[#4A4A4A] hover:text-[#C4633E]"
             >
               <img className="w-4 h-4" alt={icon.alt} src={icon.src} />
             </Button>

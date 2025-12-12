@@ -103,7 +103,7 @@ export const Media = (): JSX.Element => {
   
 
   return (
-    <div className="bg-gradient-to-b from-[#f7f3ec] to-white w-full relative">
+    <div className="bg-gradient-to-b from-[#F3EFE8] to-white w-full relative">
       <SEO
         title="Media Gallery — Dayahang Rai"
         description="Explore photos, videos, and press coverage of Dayahang Rai's work across film, television, and theatre. From iconic film moments to behind-the-scenes theatre productions."
@@ -113,12 +113,12 @@ export const Media = (): JSX.Element => {
       <Header activePage="Media" />
 
       {/* Hero Section */}
-      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#1f2a44]/5 to-white">
+      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#F3EFE8] to-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
-          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1f2a44] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
+          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
             Media Gallery
           </h1>
-          <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#1e2634cc] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
+          <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
             A visual journey through Dayahang Rai's career — from iconic film moments to powerful theatre productions, behind-the-scenes glimpses, and press features.
           </p>
         </div>
@@ -128,7 +128,7 @@ export const Media = (): JSX.Element => {
       <section className="relative w-full py-10 sm:py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="flex items-center justify-between mb-6 sm:mb-8">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1f2a44] text-2xl sm:text-3xl md:text-4xl">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl">
               Featured Videos
             </h2>
           </div>
@@ -137,7 +137,7 @@ export const Media = (): JSX.Element => {
             {featuredVideos.map((video, index) => (
               <div
                 key={index}
-                className="group block border border-solid border-[#dee1e6] rounded-xl overflow-hidden hover:shadow-2xl hover:border-[#1f2a44]/20 transition-all duration-300"
+                className="group block border border-solid border-[#e0d7c7] rounded-xl overflow-hidden hover:shadow-2xl hover:border-[#C9A86A]/40 transition-all duration-300"
               >
                 <div className="aspect-video bg-gradient-to-br from-slate-900 to-slate-700 relative overflow-hidden">
                   <img
@@ -149,7 +149,7 @@ export const Media = (): JSX.Element => {
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-[#1f2a44] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                    <div className="w-16 h-16 bg-[#C4633E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5v14l11-7L8 5z" fill="white" />
                       </svg>
@@ -159,17 +159,17 @@ export const Media = (): JSX.Element => {
 
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-[#1f2a44] bg-[#1f2a44]/5 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold text-[#C4633E] bg-[#C4633E]/10 px-2 py-1 rounded">
                       {video.type}
                     </span>
-                    <span className="text-xs text-[#1e2634cc]">{video.year}</span>
+                    <span className="text-xs text-[#6F6F6F]">{video.year}</span>
                   </div>
 
-                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1e2634] text-lg mb-2 group-hover:text-[#1f2a44] transition-colors">
+                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2 group-hover:text-[#C4633E] transition-colors">
                     {video.title}
                   </h3>
 
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm text-[#4A4A4A] leading-relaxed">
                     {video.description}
                   </p>
                 </div>
@@ -180,13 +180,13 @@ export const Media = (): JSX.Element => {
       </section>
 
       {/* Featured Iconic Films Section */}
-      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#1f2a44]/5 to-white">
+      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#F3EFE8] to-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1f2a44] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
               Iconic Film Performances
             </h2>
-            <p className="text-[#1e2634cc] text-lg max-w-3xl mx-auto">
+            <p className="text-[#4A4A4A] text-lg max-w-3xl mx-auto">
               Celebrating the blockbuster franchises that made Dayahang Rai one of Nepal's most popular actors
             </p>
           </div>
@@ -195,7 +195,7 @@ export const Media = (): JSX.Element => {
             {featuredFilms.map((film, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-xl overflow-hidden border border-[#dee1e6] hover:shadow-2xl hover:border-[#1f2a44]/30 transition-all duration-300"
+                className="group bg-white rounded-xl overflow-hidden border border-[#e0d7c7] hover:shadow-2xl hover:border-[#C9A86A]/40 transition-all duration-300"
               >
                 <div className="md:flex">
                   <div className="md:w-2/5 aspect-[3/4] md:aspect-auto bg-slate-200 overflow-hidden">
@@ -211,23 +211,23 @@ export const Media = (): JSX.Element => {
                   <div className="md:w-3/5 p-6 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-semibold text-[#1f2a44] bg-[#1f2a44]/10 px-3 py-1 rounded-full">
+                        <span className="text-xs font-semibold text-[#C9A86A] bg-[#C9A86A]/15 px-3 py-1 rounded-full">
                           {film.year}
                         </span>
-                        <span className="text-sm text-slate-600 italic">Role: {film.role}</span>
+                          <span className="text-sm text-[#6F6F6F] italic">Role: {film.role}</span>
                       </div>
                       
-                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1e2634] text-xl md:text-2xl mb-3 group-hover:text-[#1f2a44] transition-colors">
+                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#2B2B2B] text-xl md:text-2xl mb-3 group-hover:text-[#C4633E] transition-colors">
                         {film.title}
                       </h3>
                       
-                      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                      <p className="text-sm md:text-base text-[#4A4A4A] leading-relaxed">
                         {film.description}
                       </p>
                     </div>
                     
                     <div className="mt-4 pt-4 border-t border-slate-200">
-                      <div className="flex items-center gap-2 text-[#1f2a44]">
+                      <div className="flex items-center gap-2 text-[#C4633E]">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
                         </svg>
@@ -245,7 +245,7 @@ export const Media = (): JSX.Element => {
       {/* Press & Interviews Section */}
       <section className="relative w-full py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1f2a44] text-3xl md:text-4xl mb-8">
+          <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-3xl md:text-4xl mb-8">
             Press & Interviews
           </h2>
 
@@ -253,24 +253,24 @@ export const Media = (): JSX.Element => {
             {pressMedia.map((item, index) => (
               <div
                 key={index}
-                className="border border-[#dee1e6] rounded-xl p-6 hover:shadow-lg hover:border-[#1f2a44]/20 transition-all duration-300"
+                className="border border-[#e0d7c7] rounded-xl p-6 hover:shadow-lg hover:border-[#C9A86A]/30 transition-all duration-300"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <span className="text-xs font-semibold text-[#1f2a44] bg-[#1f2a44]/5 px-2 py-1 rounded">
+                  <span className="text-xs font-semibold text-[#C4633E] bg-[#C4633E]/10 px-2 py-1 rounded">
                     {item.type}
                   </span>
-                  <span className="text-xs text-slate-500">{item.date}</span>
+                  <span className="text-xs text-[#6F6F6F]">{item.date}</span>
                 </div>
                 
-                <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1e2634] text-lg mb-2">
+                <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-lg mb-2">
                   {item.title}
                 </h3>
                 
-                <p className="text-sm text-slate-600 mb-3 leading-relaxed">
+                <p className="text-sm text-[#4A4A4A] mb-3 leading-relaxed">
                   {item.description}
                 </p>
                 
-                <p className="text-xs text-slate-500 italic">
+                <p className="text-xs text-[#6F6F6F] italic">
                   Published by {item.outlet}
                 </p>
               </div>
@@ -280,17 +280,17 @@ export const Media = (): JSX.Element => {
       </section>
 
       {/* Call to Action */}
-      <section className="relative w-full py-12 bg-gradient-to-br from-[#1f2a44]/5 to-white">
+      <section className="relative w-full py-12 bg-gradient-to-br from-[#F3EFE8] to-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
-          <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1f2a44] text-2xl md:text-3xl mb-4">
+          <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-2xl md:text-3xl mb-4">
             Interested in Working Together?
           </h3>
-          <p className="text-[#1e2634cc] text-base md:text-lg mb-6 max-w-2xl mx-auto">
+          <p className="text-[#4A4A4A] text-base md:text-lg mb-6 max-w-2xl mx-auto">
             For collaboration inquiries, casting opportunities, or media requests, feel free to get in touch.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#1f2a44] hover:bg-[#151c2f] text-white font-medium px-8 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            className="inline-block bg-[#C4633E] hover:bg-[#b45735] text-white font-medium px-8 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
           >
             Contact Me
           </a>

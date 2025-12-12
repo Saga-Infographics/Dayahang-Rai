@@ -24,7 +24,7 @@ export const InquiryFormSection = (): JSX.Element => {
       <div className="container mx-auto px-6 md:px-40">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-10 md:gap-24">
           <div className="flex flex-col gap-10">
-            <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1f] text-base tracking-[0] leading-6">
+            <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-base tracking-[0] leading-6">
               Elegant portfolio for an actor.
             </p>
             <div className="flex gap-6">
@@ -41,14 +41,14 @@ export const InquiryFormSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-base tracking-[0] leading-6">
+            <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-base tracking-[0] leading-6">
               Sections
             </h3>
             <nav className="flex flex-col gap-3">
               {sectionLinks.map((link, index) => (
                 <button
                   key={index}
-                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#171a1f] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity"
+                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity"
                 >
                   {link.label}
                 </button>
@@ -57,14 +57,14 @@ export const InquiryFormSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-base tracking-[0] leading-6">
+            <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-base tracking-[0] leading-6">
               Connect
             </h3>
             <nav className="flex flex-col gap-3">
               {connectLinks.map((link, index) => (
                 <button
                   key={index}
-                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#171a1f] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity"
+                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity"
                 >
                   {link.label}
                 </button>

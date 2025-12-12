@@ -32,7 +32,7 @@ export default function HeroImage({
 
             {/* caption area like a polaroid foot */}
             <div className="mt-3 text-center">
-              <p className="text-sm font-medium text-[#171a1f]">{caption}</p>
+              <p className="text-sm font-medium text-[#4A4A4A]">{caption}</p>
             </div>
           </div>
 

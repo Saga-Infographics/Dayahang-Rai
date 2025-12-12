@@ -44,7 +44,7 @@ export const Biography = (): JSX.Element => {
       />
       <Header activePage="Biography" />
 
-      <section className="w-full bg-gradient-to-b from-[#f7f3ec] to-white py-10 sm:py-16 md:py-20 lg:py-28">
+      <section className="w-full bg-gradient-to-b from-[#F3EFE8] to-white py-10 sm:py-16 md:py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center mb-12 sm:mb-16 md:mb-24">
             {/* Portrait */}
@@ -59,14 +59,14 @@ export const Biography = (): JSX.Element => {
 
             {/* Biography Text */}
             <div>
-              <h1 className="text-[#1f2a44] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6">Dayahang Rai</h1>
-              <p className="text-[#1e2634cc] text-base sm:text-lg md:text-xl mb-3 sm:mb-4 leading-relaxed">
+              <h1 className="text-[#2B2B2B] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6">Dayahang Rai</h1>
+              <p className="text-[#4A4A4A] text-base sm:text-lg md:text-xl mb-3 sm:mb-4 leading-relaxed">
                 Dayahang Rai is a renowned Nepali actor, director, and playwright born on April 13, 1980, in Khawa, Bhojpur District. He is one of the most popular contemporary actors in Nepal with over 50 films to his credit and a significant presence in theatre.
               </p>
-              <p className="text-[#1e2634cc] text-lg md:text-xl mb-4 leading-relaxed">
+              <p className="text-[#4A4A4A] text-lg md:text-xl mb-4 leading-relaxed">
                 He rose to prominence through theatrical performances and television series like Yuwa and Dalan, but achieved widespread recognition with his roles in <strong>Loot</strong> (2012), <strong>Kabaddi</strong> series, and <strong>White Sun</strong>, which was submitted to the 2018 Oscars.
               </p>
-              <p className="text-[#1e2634cc] text-lg md:text-xl leading-relaxed">
+              <p className="text-[#4A4A4A] text-lg md:text-xl leading-relaxed">
                 A recipient of three National Awards for acting, Dayahang continues to deliver versatile and impactful performances that combine traditional Nepali storytelling with contemporary acting techniques. He is also co-founder of Mandala Theatre, Nepal.
               </p>
             </div>
@@ -74,7 +74,7 @@ export const Biography = (): JSX.Element => {
 
           {/* Affiliations */}
           <div className="mb-12 sm:mb-16 md:mb-24">
-            <h2 className="text-[#1f2a44] text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 md:mb-12">Professional Roles & Affiliations</h2>
+            <h2 className="text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 md:mb-12">Professional Roles & Affiliations</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {affiliations.map((item, idx) => (
                 <div
@@ -90,16 +90,16 @@ export const Biography = (): JSX.Element => {
 
           {/* Filmography */}
           <div>
-            <h2 className="text-[#1f2a44] text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 md:mb-12">Top Blockbuster Films</h2>
+            <h2 className="text-[#2B2B2B] text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 md:mb-12">Top Blockbuster Films</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {filmography.map((film, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-[#1f2a44] hover:scale-105 transform transition-transform duration-300"
+                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-[#C9A86A] hover:scale-105 transform transition-transform duration-300"
                 >
-                  <h3 className="text-xl font-bold text-[#1f2a44] mb-1">{film.title} ({film.year})</h3>
-                  <p className="text-sm text-gray-500 mb-2"><strong>Role:</strong> {film.role}</p>
-                  <p className="text-gray-700">{film.description}</p>
+                  <h3 className="text-xl font-bold text-[#2B2B2B] mb-1">{film.title} ({film.year})</h3>
+                  <p className="text-sm text-[#6F6F6F] mb-2"><strong>Role:</strong> {film.role}</p>
+                  <p className="text-[#4A4A4A]">{film.description}</p>
                 </div>
               ))}
             </div>
@@ -109,13 +109,13 @@ export const Biography = (): JSX.Element => {
           <div className="mt-16 text-center">
             <a
               href="/media"
-              className="inline-block px-8 py-4 bg-[#1f2a44] text-white font-semibold rounded-lg hover:bg-[#151c2f] transition-colors shadow-lg hover:shadow-xl"
+              className="inline-block px-8 py-4 bg-[#C4633E] text-white font-semibold rounded-lg hover:bg-[#b45735] transition-colors shadow-lg hover:shadow-xl"
             >
               Explore Media Gallery
             </a>
             <a
               href="/contact"
-              className="inline-block ml-4 px-8 py-4 border-2 border-[#1f2a44] text-[#1f2a44] font-semibold rounded-lg hover:bg-[#1f2a44] hover:text-white transition-colors shadow-lg hover:shadow-xl"
+              className="inline-block ml-4 px-8 py-4 border-2 border-[#C9A86A] text-[#C9A86A] font-semibold rounded-lg hover:bg-[#C9A86A] hover:text-[#1A1A1A] transition-colors shadow-lg hover:shadow-xl"
             >
               Contact Dayahang Rai
             </a>
