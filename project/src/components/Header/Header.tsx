@@ -53,7 +53,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
             <img className="w-6 h-6 group-hover:rotate-12 transition-transform duration-500 ease-in-out" alt="Gem" src="/gem.svg" />
           </div>
           <div>
-            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1A1A1A] text-xl tracking-tight leading-5 group-hover:text-[#C4633E] transition-colors">
+            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1A1A1A] text-xl tracking-tight leading-5">
               Dayahang Rai
             </h1>
             <p className="text-xs text-[#6F6F6F] font-medium tracking-wide">Actor • Theatre Practitioner</p>
