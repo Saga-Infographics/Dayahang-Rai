@@ -33,152 +33,6 @@ const featuredVideos = [
 ];
 
 // Theatre and film stills
-const photos = [
-  {
-    title: "Kabaddi Series",
-    category: "Film",
-    src: "/images/kabaddi.jpg",
-    year: "2013-2019",
-  },
-  {
-    title: "Loot",
-    category: "Film",
-    src: "/images/loot.jpg",
-    year: "2012",
-  },
-  {
-    title: "Mandala Theatre",
-    category: "Theatre",
-    src: "/images/mandala-theatre.jpg",
-    year: "2024-2025",
-  },
-  {
-    title: "White Sun (Seto Surya)",
-    category: "Film",
-    src: "/images/white-sun.jpg",
-    year: "2016",
-  },
-  {
-    title: "Mitjyu Theatre",
-    category: "Theatre",
-    src: "/images/mitjyu.jpg",
-    year: "2014",
-  },
-  {
-    title: "Yojanapark Production",
-    category: "Theatre",
-    src: "/images/yojanapark.jpg",
-    year: "2016",
-  },
-  {
-    title: "Maasinya Theatre",
-    category: "Theatre",
-    src: "/images/maasinya.jpg",
-    year: "2024",
-  },
-  {
-    title: "Chhakka Panja 4",
-    category: "Film",
-    src: "/images/chhakka-panja4.jpg",
-    year: "2023",
-  },
-  {
-    title: "Hostel Returns - Breakout Role",
-    category: "Film",
-    src: "/images/hostel_return2.jpg",
-    year: "2015",
-  },
-  {
-    title: "Kabaddi 4: The Final Match",
-    category: "Film",
-    src: "/images/kabaddi4.jpg",
-    year: "2023",
-  },
-  {
-    title: "Ghampani",
-    category: "Film",
-    src: "/images/ghampani.jpg",
-    year: "2017",
-  },
-  {
-    title: "Bijuli Machine",
-    category: "Film",
-    src: "/images/bijuli-machine.jpg",
-    year: "2016",
-  },
-  {
-    title: "Kohalpur Express",
-    category: "Film",
-    src: "/images/kohalpur.jpg",
-    year: "2018",
-  },
-  {
-    title: "Mr. Jholay",
-    category: "Film",
-    src: "/images/mr-jholay.jpg",
-    year: "2018",
-  },
-  {
-    title: "Purano Dunga",
-    category: "Film",
-    src: "/images/purano-dunga.jpg",
-    year: "2016",
-  },
-  {
-    title: "Barista Balaram",
-    category: "Film",
-    src: "/images/barista-balaram_2.jpg",
-    year: "2025",
-  },
-  {
-    title: "Saanghuro",
-    category: "Film",
-    src: "/images/saanghuro.jpg",
-    year: "2013",
-  },
-  {
-    title: "Bir Bikram 2",
-    category: "Film",
-    src: "/images/bir-bikram2.jpg",
-    year: "2019",
-  },
-  {
-    title: "Damaruko Dandibiyo",
-    category: "Film",
-    src: "/images/damaruko.jpg",
-    year: "2018",
-  },
-  {
-    title: "Hari Hajurba Theatre",
-    category: "Theatre",
-    src: "/images/hari-hajurba.jpg",
-    year: "2024-2025",
-  },
-  {
-    title: "A Mero Hajur 2",
-    category: "Film",
-    src: "/images/a-mero-hajur2.jpg",
-    year: "2017",
-  },
-  {
-    title: "Panche Baja",
-    category: "Film",
-    src: "/images/panche-baja.jpg",
-    year: "2018",
-  },
-  {
-    title: "Senti Virus",
-    category: "Film",
-    src: "/images/senti-virus.jpg",
-    year: "2020",
-  },
-  {
-    title: "Saili",
-    category: "Film",
-    src: "/images/saili.jpg",
-    year: "2019",
-  },
-];
 
 // Featured Iconic Films
 const featuredFilms = [
@@ -245,14 +99,11 @@ const pressMedia = [
 ];
 
 export const Media = (): JSX.Element => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [selectedCategory] = useState<string>("All");
   
-  const filteredPhotos = selectedCategory === "All" 
-    ? photos 
-    : photos.filter(photo => photo.category === selectedCategory);
 
   return (
-    <div className="bg-gradient-to-b from-[#fff5f2] to-white w-full relative">
+    <div className="bg-gradient-to-b from-[#f7f3ec] to-white w-full relative">
       <SEO
         title="Media Gallery — Dayahang Rai"
         description="Explore photos, videos, and press coverage of Dayahang Rai's work across film, television, and theatre. From iconic film moments to behind-the-scenes theatre productions."
@@ -262,12 +113,12 @@ export const Media = (): JSX.Element => {
       <Header activePage="Media" />
 
       {/* Hero Section */}
-      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
+      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#1f2a44]/5 to-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
-          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
+          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1f2a44] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
             Media Gallery
           </h1>
-          <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
+          <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#1e2634cc] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
             A visual journey through Dayahang Rai's career — from iconic film moments to powerful theatre productions, behind-the-scenes glimpses, and press features.
           </p>
         </div>
@@ -277,7 +128,7 @@ export const Media = (): JSX.Element => {
       <section className="relative w-full py-10 sm:py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="flex items-center justify-between mb-6 sm:mb-8">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1f2a44] text-2xl sm:text-3xl md:text-4xl">
               Featured Videos
             </h2>
           </div>
@@ -286,7 +137,7 @@ export const Media = (): JSX.Element => {
             {featuredVideos.map((video, index) => (
               <div
                 key={index}
-                className="group block border border-solid border-[#dee1e6] rounded-xl overflow-hidden hover:shadow-2xl hover:border-[#7B1E2C]/20 transition-all duration-300"
+                className="group block border border-solid border-[#dee1e6] rounded-xl overflow-hidden hover:shadow-2xl hover:border-[#1f2a44]/20 transition-all duration-300"
               >
                 <div className="aspect-video bg-gradient-to-br from-slate-900 to-slate-700 relative overflow-hidden">
                   <img
@@ -298,7 +149,7 @@ export const Media = (): JSX.Element => {
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-[#7B1E2C] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                    <div className="w-16 h-16 bg-[#1f2a44] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5v14l11-7L8 5z" fill="white" />
                       </svg>
@@ -308,13 +159,13 @@ export const Media = (): JSX.Element => {
 
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-[#7B1E2C] bg-[#7B1E2C]/5 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold text-[#1f2a44] bg-[#1f2a44]/5 px-2 py-1 rounded">
                       {video.type}
                     </span>
-                    <span className="text-xs text-[#171a1fcc]">{video.year}</span>
+                    <span className="text-xs text-[#1e2634cc]">{video.year}</span>
                   </div>
 
-                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-lg mb-2 group-hover:text-[#7B1E2C] transition-colors">
+                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1e2634] text-lg mb-2 group-hover:text-[#1f2a44] transition-colors">
                     {video.title}
                   </h3>
 
@@ -329,13 +180,13 @@ export const Media = (): JSX.Element => {
       </section>
 
       {/* Featured Iconic Films Section */}
-      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
+      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#1f2a44]/5 to-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1f2a44] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
               Iconic Film Performances
             </h2>
-            <p className="text-[#171a1fcc] text-lg max-w-3xl mx-auto">
+            <p className="text-[#1e2634cc] text-lg max-w-3xl mx-auto">
               Celebrating the blockbuster franchises that made Dayahang Rai one of Nepal's most popular actors
             </p>
           </div>
@@ -344,7 +195,7 @@ export const Media = (): JSX.Element => {
             {featuredFilms.map((film, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-xl overflow-hidden border border-[#dee1e6] hover:shadow-2xl hover:border-[#7B1E2C]/30 transition-all duration-300"
+                className="group bg-white rounded-xl overflow-hidden border border-[#dee1e6] hover:shadow-2xl hover:border-[#1f2a44]/30 transition-all duration-300"
               >
                 <div className="md:flex">
                   <div className="md:w-2/5 aspect-[3/4] md:aspect-auto bg-slate-200 overflow-hidden">
@@ -360,13 +211,13 @@ export const Media = (): JSX.Element => {
                   <div className="md:w-3/5 p-6 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-semibold text-[#7B1E2C] bg-[#7B1E2C]/10 px-3 py-1 rounded-full">
+                        <span className="text-xs font-semibold text-[#1f2a44] bg-[#1f2a44]/10 px-3 py-1 rounded-full">
                           {film.year}
                         </span>
                         <span className="text-sm text-slate-600 italic">Role: {film.role}</span>
                       </div>
                       
-                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#171a1f] text-xl md:text-2xl mb-3 group-hover:text-[#7B1E2C] transition-colors">
+                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#1e2634] text-xl md:text-2xl mb-3 group-hover:text-[#1f2a44] transition-colors">
                         {film.title}
                       </h3>
                       
@@ -376,7 +227,7 @@ export const Media = (): JSX.Element => {
                     </div>
                     
                     <div className="mt-4 pt-4 border-t border-slate-200">
-                      <div className="flex items-center gap-2 text-[#7B1E2C]">
+                      <div className="flex items-center gap-2 text-[#1f2a44]">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
                         </svg>
@@ -394,7 +245,7 @@ export const Media = (): JSX.Element => {
       {/* Press & Interviews Section */}
       <section className="relative w-full py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-3xl md:text-4xl mb-8">
+          <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1f2a44] text-3xl md:text-4xl mb-8">
             Press & Interviews
           </h2>
 
@@ -402,16 +253,16 @@ export const Media = (): JSX.Element => {
             {pressMedia.map((item, index) => (
               <div
                 key={index}
-                className="border border-[#dee1e6] rounded-xl p-6 hover:shadow-lg hover:border-[#7B1E2C]/20 transition-all duration-300"
+                className="border border-[#dee1e6] rounded-xl p-6 hover:shadow-lg hover:border-[#1f2a44]/20 transition-all duration-300"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <span className="text-xs font-semibold text-[#7B1E2C] bg-[#7B1E2C]/5 px-2 py-1 rounded">
+                  <span className="text-xs font-semibold text-[#1f2a44] bg-[#1f2a44]/5 px-2 py-1 rounded">
                     {item.type}
                   </span>
                   <span className="text-xs text-slate-500">{item.date}</span>
                 </div>
                 
-                <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-lg mb-2">
+                <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1e2634] text-lg mb-2">
                   {item.title}
                 </h3>
                 
@@ -429,17 +280,17 @@ export const Media = (): JSX.Element => {
       </section>
 
       {/* Call to Action */}
-      <section className="relative w-full py-12 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
+      <section className="relative w-full py-12 bg-gradient-to-br from-[#1f2a44]/5 to-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
-          <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-2xl md:text-3xl mb-4">
+          <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1f2a44] text-2xl md:text-3xl mb-4">
             Interested in Working Together?
           </h3>
-          <p className="text-[#171a1fcc] text-base md:text-lg mb-6 max-w-2xl mx-auto">
+          <p className="text-[#1e2634cc] text-base md:text-lg mb-6 max-w-2xl mx-auto">
             For collaboration inquiries, casting opportunities, or media requests, feel free to get in touch.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#7B1E2C] hover:bg-[#5a1620] text-white font-medium px-8 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            className="inline-block bg-[#1f2a44] hover:bg-[#151c2f] text-white font-medium px-8 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
           >
             Contact Me
           </a>

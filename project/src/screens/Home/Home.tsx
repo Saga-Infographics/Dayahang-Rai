@@ -12,7 +12,7 @@ export const Home = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-[#fff5f2] to-white w-full relative overflow-x-hidden">  {/* FIX ADDED */}
+    <div className="bg-gradient-to-b from-[#f7f3ec] to-white w-full relative overflow-x-hidden">  {/* FIX ADDED */}
       <SEO
         title="Dayahang Rai — Nepali Actor, Comedian & Theatre Practitioner"
         description="Discover the journey of Dayahang Rai, a versatile Nepali actor and theatre practitioner known for his impactful characters, comedic style, and cultural storytelling in film, theatre, and television."
@@ -25,7 +25,7 @@ export const Home = (): JSX.Element => {
       {/* Hero */}
       <section className="relative w-full min-h-[600px] md:min-h-[680px] bg-gradient-to-br from-foreground/2 to-white overflow-visible isolate">
         <div className="absolute inset-0 pointer-events-none -z-20">
-          <div className="hidden md:block absolute -right-40 top-6 w-[560px] h-[560px] bg-gradient-to-tr from-[#fff1f2] to-[#fffaf0] rounded-full opacity-40 transform rotate-12 filter blur-3xl" />
+          <div className="hidden md:block absolute -right-40 top-6 w-[560px] h-[560px] bg-gradient-to-tr from-[#e7ecf6] to-[#f5efe3] rounded-full opacity-40 transform rotate-12 filter blur-3xl" />
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 md:py-20 relative z-10">
@@ -90,7 +90,7 @@ export const Home = (): JSX.Element => {
           {/* Stat Cards */}
           <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow-inner mb-4">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1f2a44] to-[#151c2f] text-white flex items-center justify-center shadow-inner mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   <circle cx="8" cy="17" r="1.6" fill="currentColor" />
@@ -99,7 +99,7 @@ export const Home = (): JSX.Element => {
               </div>
 
               <p className="text-sm text-gray-500">Years</p>
-              <p className="text-3xl font-bold text-[#171a1f]">15+</p>
+              <p className="text-3xl font-bold text-[#1e2634]">15+</p>
 
               <p className="text-sm text-gray-600 mt-3 leading-relaxed">
                 Extensive experience in theatre, film, and contemporary drama across two decades.
@@ -107,7 +107,7 @@ export const Home = (): JSX.Element => {
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow-inner mb-4">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#c58f2d] to-[#9d7330] text-white flex items-center justify-center shadow-inner mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
                   <path d="M7 11h.01M12 11h.01M17 11h.01" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -115,7 +115,7 @@ export const Home = (): JSX.Element => {
               </div>
 
               <p className="text-sm text-gray-500">Stage & Screen</p>
-              <p className="text-3xl font-bold text-[#171a1f]">50+</p>
+              <p className="text-3xl font-bold text-[#1e2634]">50+</p>
 
               <p className="text-sm text-gray-600 mt-3 leading-relaxed">
                 Over 50 films, theatre productions, and television appearances spanning multiple genres.
@@ -123,7 +123,7 @@ export const Home = (): JSX.Element => {
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow-inner mb-4">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#c58f2d] to-[#9d7330] text-white flex items-center justify-center shadow-inner mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M12 3v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -132,7 +132,7 @@ export const Home = (): JSX.Element => {
               </div>
 
               <p className="text-sm text-gray-500">Community</p>
-              <p className="text-2xl font-bold text-[#171a1f]">Awards</p>
+              <p className="text-2xl font-bold text-[#1e2634]">Awards</p>
 
               <p className="text-sm text-gray-600 mt-3 leading-relaxed">
                 Recipient of three National Awards and multiple recognitions for excellence in acting.
@@ -228,7 +228,7 @@ export const Home = (): JSX.Element => {
             {/* Card A */}
             <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 min-h-[160px] lg:aspect-square">
               <div className="flex flex-col sm:flex-row items-start gap-4 h-full">
-                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#7B1E2C] text-white flex items-center justify-center">
+                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#1f2a44] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2a4 4 0 100 8 4 4 0 000-8zM6 20a6 6 0 0112 0" stroke="currentColor" strokeWidth="1.4" />
                   </svg>
@@ -236,7 +236,7 @@ export const Home = (): JSX.Element => {
 
                 <div className="flex-1 min-w-0 flex flex-col justify-between">
                   <div className="text-sm text-muted-foreground">Actor & Practitioner</div>
-                  <div className="font-semibold text-lg text-[#171a1f] mt-1">
+                  <div className="font-semibold text-lg text-[#1e2634] mt-1">
                     Traditional & Contemporary Storytelling
                   </div>
                   <p className="text-sm text-slate-500 mt-2 leading-relaxed">
@@ -249,7 +249,7 @@ export const Home = (): JSX.Element => {
             {/* Card B */}
             <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 min-h-[160px] lg:aspect-square">
               <div className="flex flex-col sm:flex-row items-start gap-4 h-full">
-                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-gradient-to-br from-[#cc5500] to-[#a84200] text-white flex items-center justify-center">
+                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-gradient-to-br from-[#c58f2d] to-[#8b6529] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" strokeWidth="1.4" />
                   </svg>
@@ -257,7 +257,7 @@ export const Home = (): JSX.Element => {
 
                 <div className="flex-1 min-w-0 flex flex-col justify-between">
                   <div className="text-sm text-muted-foreground">Versatile Performer</div>
-                  <div className="font-semibold text-lg text-[#171a1f] mt-1">
+                  <div className="font-semibold text-lg text-[#1e2634] mt-1">
                     Theatre, Film & Television
                   </div>
                   <p className="text-sm text-slate-500 mt-2 leading-relaxed">
@@ -271,7 +271,7 @@ export const Home = (): JSX.Element => {
             {/* Card C */}
             <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 min-h-[160px] lg:aspect-square">
               <div className="flex flex-col sm:flex-row items-start gap-4 h-full">
-                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#f59e0b] text-white flex items-center justify-center">
+                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#c58f2d] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M12 2l2.9 6.2L21 9l-5 3.8L17 21l-5-3.2L7 21l1-8.2L3 9l6.1-.8L12 2z"
@@ -283,7 +283,7 @@ export const Home = (): JSX.Element => {
 
                 <div className="flex-1 min-w-0 flex flex-col justify-between">
                   <div className="text-sm text-muted-foreground">Cultural Impact</div>
-                  <div className="font-semibold text-lg text-[#171a1f] mt-1">
+                  <div className="font-semibold text-lg text-[#1e2634] mt-1">
                     Memorable Characters & Expressions
                   </div>
                   <p className="text-sm text-slate-500 mt-2 leading-relaxed">
@@ -297,7 +297,7 @@ export const Home = (): JSX.Element => {
             {/* Card D */}
             <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 min-h-[160px] lg:aspect-square">
               <div className="flex flex-col sm:flex-row items-start gap-4 h-full">
-                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#7B1E2C] text-white flex items-center justify-center">
+                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#1f2a44] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M12 4v8M8 12h8M4 20h16" stroke="currentColor" strokeWidth="1.4" />
                   </svg>
@@ -305,7 +305,7 @@ export const Home = (): JSX.Element => {
 
                 <div className="flex-1 min-w-0 flex flex-col justify-between">
                   <div className="text-sm text-muted-foreground">Mentoring & Community</div>
-                  <div className="font-semibold text-lg text-[#171a1f] mt-1">
+                  <div className="font-semibold text-lg text-[#1e2634] mt-1">
                     Creative Development & Youth Programs
                   </div>
                   <p className="text-sm text-slate-500 mt-2 leading-relaxed">

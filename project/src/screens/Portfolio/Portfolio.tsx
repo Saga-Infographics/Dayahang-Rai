@@ -60,7 +60,7 @@ export const Portfolio = (): JSX.Element => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#fff5f2] to-white text-gray-900">
+    <div className="bg-gradient-to-b from-[#f7f3ec] to-white text-gray-900">
       <SEO
         title="Dayahang Rai — Portfolio, Films & Theatre"
         description="Explore Dayahang Rai's complete portfolio of award-winning films, theatre performances, and acclaimed works. Discover iconic roles in Loot, White Sun, Kabaddi series and more."
@@ -74,7 +74,7 @@ export const Portfolio = (): JSX.Element => {
       <section className="bg-white py-10 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
           <div className="flex-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#7B1E2C] mb-3 sm:mb-4">Dayahang Rai Portfolio</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1f2a44] mb-3 sm:mb-4">Dayahang Rai Portfolio</h1>
             <p className="text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
               Explore the complete works of Dayahang Rai — award-winning actor, director, and playwright known for transformative performances in Nepali cinema and theatre.
             </p>
@@ -94,7 +94,7 @@ export const Portfolio = (): JSX.Element => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 ${
                   activeCategory === category
-                    ? "bg-[#7B1E2C] text-white shadow-lg"
+                    ? "bg-[#1f2a44] text-white shadow-lg"
                     : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                 }`}
               >
@@ -115,12 +115,12 @@ export const Portfolio = (): JSX.Element => {
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#7B1E2C] text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#1f2a44] text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
                     {item.year}
                   </div>
                 </div>
                 <div className="p-4 sm:p-6">
-                  <h3 className="text-lg sm:text-xl font-bold text-[#7B1E2C] mb-2">{item.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#1f2a44] mb-2">{item.title}</h3>
                   <p className="text-xs sm:text-sm text-gray-600 font-semibold mb-2 sm:mb-3">{item.role}</p>
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{item.description}</p>
                 </div>

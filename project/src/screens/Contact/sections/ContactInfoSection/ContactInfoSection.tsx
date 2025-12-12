@@ -34,9 +34,9 @@ const formFields = [
 
 export const ContactInfoSection = (): JSX.Element => {
   return (
-    <Card className="w-full bg-white rounded-[10px] border border-solid border-[#dee1e6] shadow-[0px_0px_1px_#171a1f0d,0px_0px_2px_#171a1f14]">
+    <Card className="w-full bg-white rounded-[10px] border border-solid border-[#dee1e6] shadow-[0px_0px_1px_#1e26340d,0px_0px_2px_#1e263414]">
       <CardContent className="flex flex-col p-4 sm:p-6 md:p-8">
-        <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-xl sm:text-2xl md:text-3xl tracking-[0] leading-7 sm:leading-8 md:leading-9 mb-6 sm:mb-8 md:mb-10">
+        <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#1f2a44] text-xl sm:text-2xl md:text-3xl tracking-[0] leading-7 sm:leading-8 md:leading-9 mb-6 sm:mb-8 md:mb-10">
           Send a Booking Inquiry
         </h2>
 
@@ -45,7 +45,7 @@ export const ContactInfoSection = (): JSX.Element => {
             <div key={field.id} className="flex flex-col gap-[9px]">
               <Label
                 htmlFor={field.id}
-                className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1f] text-xs tracking-[0] leading-5"
+                className="[font-family:'Open_Sans',Helvetica] font-normal text-[#1e2634] text-xs tracking-[0] leading-5"
               >
                 {field.label}
               </Label>
@@ -76,7 +76,7 @@ export const ContactInfoSection = (): JSX.Element => {
 
           <Button
             type="submit"
-            className="w-full bg-[#18386e] hover:bg-[#18386e]/90 border-0 h-10 rounded-md [font-family:'Open_Sans',Helvetica] font-semibold text-white text-sm text-center tracking-[0] leading-[22px] mt-[6px]"
+            className="w-full bg-[#1f2a44] hover:bg-[#1f2a44]/90 border-0 h-10 rounded-md [font-family:'Open_Sans',Helvetica] font-semibold text-white text-sm text-center tracking-[0] leading-[22px] mt-[6px]"
           >
             Send Inquiry
           </Button>

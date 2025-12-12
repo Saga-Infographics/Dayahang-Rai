@@ -116,73 +116,72 @@
 }
 @layer base {
   :root {
-    /* Cinematic Maroon & Gold - Light theme */
-    --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    /* Premium Cinematic palette */
+    --background: 38 32% 93%; /* Soft Sand */
+    --foreground: 0 0% 17%; /* Deep heading */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 38 20% 88%;
+    --muted-foreground: 0 0% 43%; /* Muted text */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 0 0% 17%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 38 24% 82%;
+    --input: 38 24% 82%;
 
-    --card: transparent;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
 
-    /* Primary = Maroon (actor personal branding) */
-    --primary: 350.5 61% 30%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary = Deep Charcoal */
+    --primary: 0 0% 10%;
+    --primary-foreground: 38 32% 93%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary = Warm Gold */
+    --secondary: 38 37% 60%;
+    --secondary-foreground: 0 0% 10%;
 
-    /* Accent = Gold */
-    --accent: 46 65% 52%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent = Terracotta */
+    --accent: 17 53% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 85% 45%;
+    --destructive-foreground: 38 32% 93%;
 
-    --ring: 46 65% 45%;
+    --ring: 38 37% 60%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    /* Cinematic Maroon & Gold - Dark theme */
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
+    /* Premium Cinematic palette - Dark */
+    --background: 0 0% 6%;
+    --foreground: 0 0% 92%;
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 65%;
 
-    /* Accent darker for dark mode */
-    --accent: 46 64% 45%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 17 53% 52%;
+    --accent-foreground: 0 0% 100%;
 
-    --popover: 224 71% 4%;
-    --popover-foreground: 215 20.2% 65.1%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 92%;
 
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
 
-    --card: transparent;
-    --card-foreground: 213 31% 91%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 92%;
 
-    /* Primary becomes light surface, foreground uses Maroon for contrast */
-    --primary: 210 40% 98%;
-    --primary-foreground: 350.5 61% 12%;
+    --primary: 38 32% 93%;
+    --primary-foreground: 0 0% 10%;
 
-    --secondary: 222.2 47.4% 11.2%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 38 37% 58%;
+    --secondary-foreground: 0 0% 10%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 48%;
+    --destructive-foreground: 0 0% 100%;
 
-    --ring: 46 64% 38%;
+    --ring: 17 53% 52%;
 
     --radius: 0.5rem;
   }

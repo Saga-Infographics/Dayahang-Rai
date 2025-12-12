@@ -151,8 +151,8 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                         to={item.path}
                         onClick={() => setOpenMobile(false)}
                         className={`block px-4 py-3 rounded-lg text-base [font-family:'Open_Sans',Helvetica] font-medium transition-all duration-500 ease-in-out ${item.label === activePage
-                            ? 'text-white bg-gradient-to-r from-[#7B1E2C] to-[#5a1620] shadow-md'
-                            : 'text-[#171a1f] hover:text-[#7B1E2C] hover:bg-white hover:shadow-sm'}`}
+                          ? 'text-white bg-gradient-to-r from-[#7B1E2C] to-[#5a1620] shadow-md'
+                          : 'text-[#171a1f] hover:text-[#7B1E2C] hover:bg-white hover:shadow-sm'}`}
                       >
                         {item.label}
                       </Link>
