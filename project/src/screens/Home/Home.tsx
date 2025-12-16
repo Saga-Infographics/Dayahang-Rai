@@ -23,35 +23,35 @@ export const Home = (): JSX.Element => {
       <Header activePage="Home" />
 
       {/* Hero */}
-      <section className="relative w-full min-h-[600px] md:min-h-[680px] bg-gradient-to-br from-[#F3EFE8] to-white overflow-visible isolate">
+      <section className="relative w-full min-h-[auto] sm:min-h-[600px] md:min-h-[680px] bg-gradient-to-br from-[#F3EFE8] to-white overflow-visible isolate">
         <div className="absolute inset-0 pointer-events-none -z-20">
           <div className="hidden md:block absolute -right-40 top-6 w-[560px] h-[560px] bg-gradient-to-tr from-[#f3efe8] to-[#fdfbf7] rounded-full opacity-50 transform rotate-12 filter blur-3xl" />
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 md:py-20 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-center">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-6 sm:py-12 md:py-20 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-center">
             <div className="max-w-xl">
-              <h1 className="[font-family:'DM_Serif_Display',Helvetica] font-extrabold text-[#2B2B2B] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 sm:mb-4">
+              <h1 className="[font-family:'DM_Serif_Display',Helvetica] font-extrabold text-[#2B2B2B] text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-2 sm:mb-4">
                 Dayahang Rai
               </h1>
 
-              <p className="text-[#111111] font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6">
+              <p className="text-[#111111] font-semibold text-sm sm:text-lg md:text-xl lg:text-2xl mb-3 sm:mb-6 leading-snug">
                 Award-Winning Nepali Actor & Theatre Practitioner — bringing authentic stories to life.
               </p>
 
-              <p className="text-[#4A4A4A] text-sm sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-4">
+              <p className="text-[#4A4A4A] text-xs sm:text-base md:text-lg leading-relaxed mb-2 sm:mb-4">
                 I'm Dayahang Rai, born on April 13, 1980, in Khawa, Bhojpur District, Eastern Nepal. My artistic journey began in Kathmandu's vibrant theatre movement, where I discovered my passion for authentic storytelling and meaningful performances.
               </p>
 
-              <p className="text-[#4A4A4A] text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
+              <p className="text-[#4A4A4A] text-xs sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
                 Over two decades, I've worked across traditional theatre, Nepali cinema, and television. My breakthrough came with the film Loot (2012), followed by critically acclaimed works like White Sun (submitted to 2018 Oscars) and the Kabaddi series. I'm the recipient of three National Awards and co-founder of Mandala Theatre, Nepal.
               </p>
 
               <div className="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-4">
-                <Button asChild size="lg" className="shadow-2xl">
+                <Button asChild size="sm" className="shadow-2xl md:size-lg">
                   <Link to="/media">
-                    <span className="relative z-10 flex items-center gap-3 px-1">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
+                    <span className="relative z-10 flex items-center gap-2 px-1 text-xs sm:text-base">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 sm:w-[18px] sm:h-[18px]">
                         <path d="M5 3v18l15-9L5 3z" fill="rgba(255,255,255,0.95)" />
                       </svg>
                       <span>Watch Reel</span>
@@ -59,23 +59,23 @@ export const Home = (): JSX.Element => {
                   </Link>
                 </Button>
 
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="sm" className="md:size-lg">
                   <Link to="/portfolio">
-                    <span className="relative z-10">Explore Portfolio</span>
+                    <span className="relative z-10 text-xs sm:text-base">Explore Portfolio</span>
                   </Link>
                 </Button>
 
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="sm" className="md:size-lg">
                   <Link to="/contact">
-                    <span className="relative z-10">Book for Projects</span>
+                    <span className="relative z-10 text-xs sm:text-base">Book for Projects</span>
                   </Link>
                 </Button>
               </div>
             </div>
 
             {/* FIX: WRAPPED ROTATED IMAGE TO PREVENT OVERFLOW */}
-            <div className="w-full flex justify-center md:justify-end mt-6 md:mt-0 overflow-hidden">
-              <div className="w-full max-w-[340px] sm:max-w-[400px] md:w-[460px] lg:w-[520px] overflow-hidden rounded-lg shadow-2xl">
+            <div className="w-full flex justify-center md:justify-end mt-4 sm:mt-6 md:mt-0 overflow-hidden">
+              <div className="w-full max-w-[280px] sm:max-w-[400px] md:w-[460px] lg:w-[520px] overflow-hidden rounded-lg shadow-2xl">
                 <HeroImage
                   src="/images/pkdai2.jpg"
                   alt="Dayahang Rai, award-winning Nepali actor, director and theatre practitioner portrait"
@@ -88,53 +88,53 @@ export const Home = (): JSX.Element => {
           </div>
 
           {/* Stat Cards */}
-          <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#111111] to-[#2B2B2B] text-white flex items-center justify-center shadow-inner mb-4">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <div className="mt-8 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#111111] to-[#2B2B2B] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   <circle cx="8" cy="17" r="1.6" fill="currentColor" />
                   <circle cx="16" cy="17" r="1.6" fill="currentColor" />
                 </svg>
               </div>
 
-              <p className="text-sm text-[#6F6F6F]">Years</p>
-              <p className="text-3xl font-bold text-[#2B2B2B]">15+</p>
+              <p className="text-xs sm:text-sm text-[#6F6F6F]">Years</p>
+              <p className="text-2xl sm:text-3xl font-bold text-[#2B2B2B]">15+</p>
 
-              <p className="text-sm text-[#4A4A4A] mt-3 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#4A4A4A] mt-2 sm:mt-3 leading-relaxed">
                 Extensive experience in theatre, film, and contemporary drama across two decades.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#C9A86A] to-[#b58f50] text-white flex items-center justify-center shadow-inner mb-4">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#C9A86A] to-[#b58f50] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
                   <path d="M7 11h.01M12 11h.01M17 11h.01" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
 
-              <p className="text-sm text-[#6F6F6F]">Stage & Screen</p>
-              <p className="text-3xl font-bold text-[#2B2B2B]">50+</p>
+              <p className="text-xs sm:text-sm text-[#6F6F6F]">Stage & Screen</p>
+              <p className="text-2xl sm:text-3xl font-bold text-[#2B2B2B]">50+</p>
 
-              <p className="text-sm text-[#4A4A4A] mt-3 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#4A4A4A] mt-2 sm:mt-3 leading-relaxed">
                 Over 50 films, theatre productions, and television appearances spanning multiple genres.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#C4633E] to-[#a55230] text-white flex items-center justify-center shadow-inner mb-4">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#C4633E] to-[#a55230] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M12 3v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M7 17h10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
 
-              <p className="text-sm text-[#6F6F6F]">Community</p>
-              <p className="text-2xl font-bold text-[#2B2B2B]">Awards</p>
+              <p className="text-xs sm:text-sm text-[#6F6F6F]">Community</p>
+              <p className="text-xl sm:text-2xl font-bold text-[#2B2B2B]">Awards</p>
 
-              <p className="text-sm text-[#4A4A4A] mt-3 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#4A4A4A] mt-2 sm:mt-3 leading-relaxed">
                 Recipient of three National Awards and multiple recognitions for excellence in acting.
               </p>
             </div>
