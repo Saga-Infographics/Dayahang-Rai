@@ -6,6 +6,18 @@
   .all-\[unset\] {
     all: unset;
   }
+
+  /* Gold hover filter for icons (high-visibility matte gold) */
+  .gold-hover:hover {
+    /* tuned for better contrast on dark backgrounds */
+    filter: invert(62%) sepia(18%) saturate(1600%) hue-rotate(345deg) brightness(1.15) contrast(1.05);
+  }
+
+  /* Permanent matte gold filter for icons (high-visibility) */
+  .gold {
+    /* tuned for consistent gold (#BFA372-ish) with higher brightness */
+    filter: invert(62%) sepia(18%) saturate(1600%) hue-rotate(345deg) brightness(1.2) contrast(1.05);
+  }
 }
 
 :root {

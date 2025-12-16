@@ -35,7 +35,7 @@ export const Home = (): JSX.Element => {
                 Dayahang Rai
               </h1>
 
-              <p className="text-[#1A1A1A] font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6">
+              <p className="text-[#111111] font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6">
                 Award-Winning Nepali Actor & Theatre Practitioner — bringing authentic stories to life.
               </p>
 
@@ -47,7 +47,7 @@ export const Home = (): JSX.Element => {
                 Over two decades, I've worked across traditional theatre, Nepali cinema, and television. My breakthrough came with the film Loot (2012), followed by critically acclaimed works like White Sun (submitted to 2018 Oscars) and the Kabaddi series. I'm the recipient of three National Awards and co-founder of Mandala Theatre, Nepal.
               </p>
 
-              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-4">
                 <Button asChild size="lg" className="shadow-2xl">
                   <Link to="/media">
                     <span className="relative z-10 flex items-center gap-3 px-1">
@@ -78,7 +78,7 @@ export const Home = (): JSX.Element => {
               <div className="w-full max-w-[340px] sm:max-w-[400px] md:w-[460px] lg:w-[520px] overflow-hidden rounded-lg shadow-2xl">
                 <HeroImage
                   src="/images/pkdai2.jpg"
-                  alt="Portrait of Dayahang Rai"
+                  alt="Dayahang Rai, award-winning Nepali actor, director and theatre practitioner portrait"
                   caption="Dayahang Rai"
                   rotate={4}
                   className="rounded-lg w-full"
@@ -90,7 +90,7 @@ export const Home = (): JSX.Element => {
           {/* Stat Cards */}
           <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1A1A1A] to-[#2B2B2B] text-white flex items-center justify-center shadow-inner mb-4">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#111111] to-[#2B2B2B] text-white flex items-center justify-center shadow-inner mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   <circle cx="8" cy="17" r="1.6" fill="currentColor" />
@@ -204,7 +204,7 @@ export const Home = (): JSX.Element => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="mt-12 sm:mt-16 flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center">
             <Button asChild size="lg">
               <Link to="/portfolio">See Full Portfolio</Link>
             </Button>
@@ -228,7 +228,7 @@ export const Home = (): JSX.Element => {
             {/* Card A */}
             <div className="bg-[#F3EFE8] rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 min-h-[160px] lg:aspect-square">
               <div className="flex flex-col sm:flex-row items-start gap-4 h-full">
-                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#1A1A1A] text-white flex items-center justify-center">
+                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#111111] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2a4 4 0 100 8 4 4 0 000-8zM6 20a6 6 0 0112 0" stroke="currentColor" strokeWidth="1.4" />
                   </svg>
@@ -297,7 +297,7 @@ export const Home = (): JSX.Element => {
             {/* Card D */}
             <div className="bg-[#F3EFE8] rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 min-h-[160px] lg:aspect-square">
               <div className="flex flex-col sm:flex-row items-start gap-4 h-full">
-                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#1A1A1A] text-white flex items-center justify-center">
+                <div className="flex-none w-10 sm:w-12 h-10 sm:h-12 rounded-md bg-[#111111] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M12 4v8M8 12h8M4 20h16" stroke="currentColor" strokeWidth="1.4" />
                   </svg>
@@ -317,11 +317,11 @@ export const Home = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button asChild>
               <a href="/biography">Read Full Biography</a>
             </Button>
-            <Button asChild variant="outline" className="ml-4">
+            <Button asChild variant="outline">
               <a href="/contact">Contact</a>
             </Button>
           </div>

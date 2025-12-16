@@ -142,14 +142,14 @@ export const Media = (): JSX.Element => {
                 <div className="aspect-video bg-gradient-to-br from-slate-900 to-slate-700 relative overflow-hidden">
                   <img
                     src={video.thumbnail}
-                    alt={video.title}
+                    alt={`${video.title} - ${video.type} (${video.year}) featuring Dayahang Rai. ${video.description}`}
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                     onError={(e: any) => {
                       e.currentTarget.src = "/images/video-placeholder.jpg";
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-[#111111] rounded-3xl flex items-center justify-center group-hover:scale-110 transition-all duration-250 shadow-2xl hover:shadow-[0_0_30px_#BFA372] hover:shadow-2xl">
+                    <div className="w-16 h-16 bg-[#111111] rounded-3xl flex items-center justify-center group-hover:scale-110 transition-all duration-250 shadow-2xl hover:shadow-[0_0_30px_#BFA372]">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5v14l11-7L8 5z" fill="white" />
                       </svg>

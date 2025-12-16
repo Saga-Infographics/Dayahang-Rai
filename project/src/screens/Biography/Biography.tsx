@@ -51,7 +51,7 @@ export const Biography = (): JSX.Element => {
             <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <img
                 src="/images/dayahang-rai-portrait.jpg"
-                alt="Dayahang Rai, Nepali actor and theatre practitioner"
+                alt="Professional portrait of Dayahang Rai, award-winning Nepali actor, director, playwright and National Award recipient"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -106,16 +106,18 @@ export const Biography = (): JSX.Element => {
           </div>
 
           {/* Call to Action */}
-          <div className="mt-16 text-center">
+          <div className="mt-12 sm:mt-16 flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center">
             <a
               href="/media"
-              className="inline-block px-8 py-4 bg-[#111111] text-[#EDEDED] font-semibold rounded-2xl hover:bg-[#1A1A1A] hover:shadow-2xl transition-all duration-250 shadow-lg hover:-translate-y-1"
+              aria-label="Explore Dayahang Rai's media gallery - photos, videos, and press coverage"
+              className="w-full sm:w-auto inline-block px-6 sm:px-8 py-3 sm:py-4 bg-[#111111] text-[#EDEDED] font-semibold rounded-2xl hover:bg-[#0E0E0E] hover:shadow-2xl transition-all duration-250 shadow-lg hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BFA372] focus-visible:ring-offset-2 text-center"
             >
               Explore Media Gallery
             </a>
             <a
               href="/contact"
-              className="inline-block ml-4 px-8 py-4 border-2 border-[#111111] text-[#111111] font-semibold rounded-2xl hover:border-[#BFA372] hover:shadow-2xl transition-all duration-250 shadow-lg hover:-translate-y-1"
+              aria-label="Contact Dayahang Rai for bookings and professional inquiries"
+              className="w-full sm:w-auto inline-block px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#111111] text-[#111111] font-semibold rounded-2xl hover:border-[#BFA372] hover:shadow-2xl transition-all duration-250 shadow-lg hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BFA372] focus-visible:ring-offset-2 text-center"
             >
               Contact Dayahang Rai
             </a>

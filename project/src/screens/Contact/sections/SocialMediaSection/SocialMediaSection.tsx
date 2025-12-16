@@ -18,11 +18,11 @@ const socialMediaIcons = [
 
 export const SocialMediaSection = (): JSX.Element => {
   return (
-    <header className="w-full h-16 bg-white shadow-[0px_0px_1px_#1a1a1a0d,0px_0px_2px_#1a1a1a14]">
+    <header className="w-full h-16 bg-white shadow-[0px_0px_1px_#1111110d,0px_0px_2px_#11111114]">
       <nav className="w-full h-full flex items-center justify-between px-6">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-[#1A1A1A] rounded-md flex items-center justify-center">
-            <img className="w-[22px] h-[22px]" alt="Gem" src="/gem.svg" />
+          <div className="w-8 h-8 bg-[#111111] rounded-md flex items-center justify-center">
+            <img className="w-[22px] h-[22px]" alt="Dayahang Rai brand logo" src="/gem.svg" />
           </div>
           <h1 className="[font-family:'DM_Serif_Display',Helvetica] font-bold text-[#2B2B2B] text-xl tracking-[0] leading-5 whitespace-nowrap">
             Dayahang Rai
@@ -37,7 +37,7 @@ export const SocialMediaSection = (): JSX.Element => {
                 className={`[font-family:'Manrope',Helvetica] text-sm tracking-[0] leading-[22px] whitespace-nowrap ${
                   item.active
                     ? "font-semibold text-[#C4633E]"
-                    : "font-normal text-[#1A1A1A]"
+                    : "font-normal text-[#111111]"
                 }`}
               >
                 {item.label}
@@ -48,14 +48,20 @@ export const SocialMediaSection = (): JSX.Element => {
 
         <div className="flex items-center gap-3">
           {socialMediaIcons.map((icon, index) => (
-            <Button
+            <a
               key={index}
-              variant="ghost"
-              size="icon"
-              className="w-10 h-10 rounded-md p-0 text-[#4A4A4A] hover:text-[#C4633E]"
+              href="#"
+              aria-label={`Visit Dayahang Rai on ${icon.alt}`}
+              className="group"
             >
-              <img className="w-4 h-4" alt={icon.alt} src={icon.src} />
-            </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="w-10 h-10 rounded-md p-0 text-[#4A4A4A] hover:text-[#BFA372] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BFA372] focus-visible:ring-offset-2 transition-all duration-250"
+              >
+                <img className="w-4 h-4" alt={icon.alt} src={icon.src} />
+              </Button>
+            </a>
           ))}
         </div>
       </nav>

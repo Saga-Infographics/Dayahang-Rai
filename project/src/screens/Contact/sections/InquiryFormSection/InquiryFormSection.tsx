@@ -29,10 +29,10 @@ export const InquiryFormSection = (): JSX.Element => {
             </p>
             <div className="flex gap-6">
               {socialIcons.map((icon, index) => (
-                <button
+                  <button
                   key={index}
-                  className="w-5 h-5 flex items-center justify-center hover:opacity-70 transition-opacity"
-                  aria-label={icon.alt}
+                    aria-label={`${icon.alt} social media link`}
+                    className="w-5 h-5 flex items-center justify-center hover:opacity-70 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BFA372] focus-visible:ring-offset-2 rounded"
                 >
                   <img className="w-5 h-5" alt={icon.alt} src={icon.src} />
                 </button>
@@ -42,13 +42,13 @@ export const InquiryFormSection = (): JSX.Element => {
 
           <div className="flex flex-col gap-5">
             <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-base tracking-[0] leading-6">
-              Sections
             </h3>
             <nav className="flex flex-col gap-3">
               {sectionLinks.map((link, index) => (
                 <button
                   key={index}
-                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity"
+                  aria-label={`Navigate to ${link.label} section`}
+                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BFA372] focus-visible:ring-offset-1 rounded"
                 >
                   {link.label}
                 </button>
@@ -58,13 +58,13 @@ export const InquiryFormSection = (): JSX.Element => {
 
           <div className="flex flex-col gap-5">
             <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#2B2B2B] text-base tracking-[0] leading-6">
-              Connect
             </h3>
             <nav className="flex flex-col gap-3">
               {connectLinks.map((link, index) => (
                 <button
                   key={index}
-                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity"
+                  aria-label={`Connect via ${link.label}`}
+                  className="text-left opacity-80 [font-family:'Open_Sans',Helvetica] font-normal text-[#4A4A4A] text-sm tracking-[0] leading-5 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BFA372] focus-visible:ring-offset-1 rounded"
                 >
                   {link.label}
                 </button>

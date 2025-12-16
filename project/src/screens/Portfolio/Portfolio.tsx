@@ -80,7 +80,7 @@ export const Portfolio = (): JSX.Element => {
             </p>
           </div>
           <div className="flex-1 flex justify-center">
-            <img src="/images/dayahang-rai-hero.jpg" alt="Dayahang Rai" className="rounded-xl shadow-lg w-full max-w-sm object-cover" />
+            <img src="/images/dayahang-rai-hero.jpg" alt="Dayahang Rai professional headshot - award-winning actor and filmmaker" className="rounded-xl shadow-lg w-full max-w-sm object-cover" />
           </div>
         </div>
       </section>
@@ -92,6 +92,8 @@ export const Portfolio = (): JSX.Element => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
+                aria-label={`Filter portfolio by ${category} category`}
+                aria-pressed={activeCategory === category}
                 className={`px-4 sm:px-6 py-2 sm:py-3 rounded-2xl text-sm sm:text-base font-semibold transition-all duration-250 shadow-md hover:shadow-lg ${
                    activeCategory === category
                     ? "bg-[#111111] text-[#EDEDED] hover:shadow-lg hover:-translate-y-1 border-b-2 border-[#BFA372]"
@@ -108,14 +110,17 @@ export const Portfolio = (): JSX.Element => {
               <div
                 key={index}
                 className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[#e0d7c7]"
+                role="article"
+                aria-label={`${item.title} - ${item.year}, role: ${item.role} - ${item.category}`}
               >
                 <div className="relative overflow-hidden bg-gray-200 h-64 sm:h-72">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={`${item.title} (${item.year}) - ${item.category} featuring Dayahang Rai as ${item.role}`}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#C9A86A] text-[#1A1A1A] px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#C9A86A] text-[#111111] px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
                     {item.year}
                   </div>
                 </div>
