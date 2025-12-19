@@ -7,15 +7,15 @@ const categories = ["All", "Film","Direction", "Theatre"];
 
 const portfolioItems = [
   // Films
-  { year: "2006", title: "Anagarik", role: "Lead", description: "An early notable film in Dayahang Rai's career, establishing him as a serious actor in Nepali cinema.", image: "/images/anagarik.jpg", category: "Film" },
+  { year: "2006", title: "Anagarik", role: "Lead", description: "An early notable film in Dayahang Rai's career, establishing him as a serious actor in Nepali cinema.", image: "https://img.youtube.com/vi/daLI9SScS-I/maxresdefault.jpg", category: "Film" },
   { year: "2009", title: "Dasdhunga", role: "Lead", description: "A significant drama that showcased Dayahang's range and commitment to meaningful cinema.", image: "/images/dasdhunga.jpg", category: "Film" },
-  { year: "2012", title: "Loot", role: "Lead", description: "A critically acclaimed thriller that became one of Dayahang's most celebrated performances, marking a turning point in his career.", image: "/images/loot.jpg", category: "Film" },
+  { year: "2012", title: "Loot", role: "Lead", description: "A critically acclaimed thriller that became one of Dayahang's most celebrated performances, marking a turning point in his career.", image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Loot_2012_film.jpg", category: "Film" },
   { year: "2013", title: "Saanghuro", role: "Nare", description: "A critically acclaimed drama where Dayahang delivered a memorable supporting performance.", image: "/images/saanghuro.jpg", category: "Film" },
-  { year: "2013", title: "Kabaddi", role: "Lead", description: "The first film in the massively successful Kabaddi franchise, establishing Dayahang as a leading contemporary actor in Nepal.", image: "/images/kabaddi.jpg", category: "Film" },
+  { year: "2013", title: "Kabaddi", role: "Lead", description: "The first film in the massively successful Kabaddi franchise, establishing Dayahang as a leading contemporary actor in Nepal.", image: "https://upload.wikimedia.org/wikipedia/en/9/9d/Nepali_Movie_Kabaddi_official_poster.jpg", category: "Film" },
   { year: "2014", title: "Talakjung vs Tulke", role: "Lead", description: "Award-winning film showcasing Dayahang's versatility during backdrop of Civil War.", image: "/images/talakjung.jpg", category: "Film" },
   { year: "2015", title: "Kabaddi Kabaddi", role: "Chhantyal", description: "Sequel to the popular Kabaddi film, Dayahang reprises his role as Chhantyal, strengthening his reputation as a leading comedic actor in Nepal.", image: "/images/kabaddi-kabaddi.jpg", category: "Film" },
   { year: "2015", title: "Woda Number 6", role: "Lead", description: "A political satire featuring Dayahang Rai, showcasing his unique blend of humor and social commentary.", image: "/images/woda-number6.jpg", category: "Film" },
-  { year: "2016", title: "Seto Surya", role: "Lead", description: "An acclaimed film that served as Nepal's official submission to the Academy Awards, earning international recognition for Dayahang's powerful performance.", image: "/images/white-sun.jpg", category: "Film" },
+  { year: "2016", title: "Seto Surya", role: "Lead", description: "An acclaimed film that served as Nepal's official submission to the Academy Awards, earning international recognition for Dayahang's powerful performance.", image: "https://upload.wikimedia.org/wikipedia/en/7/71/White_Sun_Poster1_en.jpg", category: "Film" },
   { year: "2016", title: "Chhakka Panja", role: "Lead", description: "Nepal's biggest comedy franchise where Dayahang's performance contributed to its massive popularity and critical acclaim.", image: "/images/chhakka-panja.jpg", category: "Film" },
   { year: "2016", title: "Purano Dunga", role: "Bideshi", description: "A drama reflecting rural cultural nuances and Dayahang's diverse acting abilities.", image: "/images/purano-dunga.jpg", category: "Film" },
   { year: "2016", title: "Bijuli Machine", role: "Ram Dai", description: "A unique story where Dayahang plays Ram Dai, helping elevate this experimental narrative to mainstream recognition.", image: "/images/bijuli-machine.jpg", category: "Film" },
@@ -65,7 +65,7 @@ export const Portfolio = (): JSX.Element => {
         title="Dayahang Rai — Portfolio, Films & Theatre"
         description="Explore Dayahang Rai's complete portfolio of award-winning films, theatre performances, and acclaimed works. Discover iconic roles in Loot, White Sun, Kabaddi series and more."
         path="/portfolio"
-        image="/images/dayahang-rai-hero.jpg"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFi_DHIeU1RFee18uiTvRGNyhf2zkDcnOOkzA_vjGGOZk_IO9FQ4SmOqJOuhrm8KRhqKYadj3UKM3cIElg4NbQOPfStyUZRGoEfUakg&s=10"
         structuredData={structuredData}
       />
 
@@ -80,7 +80,7 @@ export const Portfolio = (): JSX.Element => {
             </p>
           </div>
           <div className="flex-1 flex justify-center">
-            <img src="/images/dayahang-rai-hero.jpg" alt="Dayahang Rai professional headshot - award-winning actor and filmmaker" className="rounded-xl shadow-lg w-full max-w-sm object-cover" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFi_DHIeU1RFee18uiTvRGNyhf2zkDcnOOkzA_vjGGOZk_IO9FQ4SmOqJOuhrm8KRhqKYadj3UKM3cIElg4NbQOPfStyUZRGoEfUakg&s=10" alt="Dayahang Rai professional headshot - award-winning actor and filmmaker" className="rounded-xl shadow-lg w-full max-w-sm object-cover" />
           </div>
         </div>
       </section>

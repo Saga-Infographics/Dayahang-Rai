@@ -17,7 +17,7 @@ export const Home = (): JSX.Element => {
         title="Dayahang Rai — Nepali Actor, Comedian & Theatre Practitioner"
         description="Discover the journey of Dayahang Rai, a versatile Nepali actor and theatre practitioner known for his impactful characters, comedic style, and cultural storytelling in film, theatre, and television."
         path="/dayahang-rai"
-        image="/images/dayahang-rai-portrait-og.svg"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7AVLxsY3wHSKAz91oSN0CsZApXT7UDOC0UORY7_5W9FLxylwTDx21vq4R_RR4C0Lh70ZRJLCttcGUY24h9JQUUTDLZFDLGmTW5Bj0lA&s=10"
       />
 
       <Header activePage="Home" />
@@ -77,7 +77,7 @@ export const Home = (): JSX.Element => {
             <div className="w-full flex justify-center md:justify-end mt-4 sm:mt-6 md:mt-0 overflow-hidden">
               <div className="w-full max-w-[280px] sm:max-w-[400px] md:w-[460px] lg:w-[520px] overflow-hidden rounded-lg shadow-2xl">
                 <HeroImage
-                  src="/images/pkdai2.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7AVLxsY3wHSKAz91oSN0CsZApXT7UDOC0UORY7_5W9FLxylwTDx21vq4R_RR4C0Lh70ZRJLCttcGUY24h9JQUUTDLZFDLGmTW5Bj0lA&s=10"
                   alt="Dayahang Rai, award-winning Nepali actor, director and theatre practitioner portrait"
                   caption="Dayahang Rai"
                   rotate={4}
@@ -161,21 +161,21 @@ export const Home = (): JSX.Element => {
                 tag: "Film",
                 description:
                   "The turning point in Dayahang's career. His iconic character Gofle earned critical acclaim, and he co-wrote the dialogues. Won Popular Award.",
-                image: "/images/loot.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Loot_2012_film.jpg"
               },
               {
                 title: "White Sun (Seto Surya)",
                 tag: "Film",
                 description:
                   "Critically acclaimed drama about Nepal's Civil War. Selected as Nepal's submission to 2018 Oscars for Best Foreign Language Film.",
-                image: "/images/white-sun.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/en/7/71/White_Sun_Poster1_en.jpg"
               },
               {
                 title: "Kabaddi Series",
                 tag: "Film Series",
                 description:
                   "Massively successful franchise where Dayahang established himself as a leading actor, winning National Awards for best acting.",
-                image: "/images/kabaddi.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/en/9/9d/Nepali_Movie_Kabaddi_official_poster.jpg"
               },
             ].map((item, idx) => (
               <article

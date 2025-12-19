@@ -170,9 +170,9 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                     aria-label={icon.alt}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group"
+                    className="group inline-flex"
                   >
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg border-2 border-[#111111]/40 bg-white hover:border-[#BFA372] hover:bg-[#111111] transition-all duration-250">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg border-2 border-[#111111]/40 bg-white hover:border-[#BFA372] hover:bg-[#111111] transition-all duration-250 flex items-center justify-center">
                       <img className="w-4 h-4 sm:w-5 sm:h-5 group-hover:invert" src={icon.src} alt={icon.alt} />
                     </div>
                   </a>
